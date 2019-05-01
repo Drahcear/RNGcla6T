@@ -2391,7 +2391,7 @@ MonoBehaviour:
   - 'Instructeur : Essaye de toucher ce mannequin.'
   - "Instructeur : Si ton attaque atteint un ennemi, sa vie diminue et peut \xE9ventuellement<br>mourir."
   - "Instructeur : D\xE8s que tu as fini continue ton chemin."
-  typingSpeed: 0
+  typingSpeed: 0.01
   continueButton: {fileID: 1744759621}
   dialogbox: {fileID: 1314506939}
 --- !u!4 &1636196015
@@ -2443,7 +2443,7 @@ MonoBehaviour:
   - "BestMasterYi : Si tu as d'autres questions je t'invite \xE0 refaire le tutoriel"
   - "BestMasterYi : On se dit \xE0 bient\xF4t sur le raint\xE9."
   - 'BestMasterYi : Et soit victorieuse.'
-  typingSpeed: 0
+  typingSpeed: 0.01
   continueButton: {fileID: 1136223471}
   dialogbox: {fileID: 1602896739}
 --- !u!4 &1673767993

@@ -326,7 +326,7 @@ PrefabInstance:
     - target: {fileID: 2026629188327948468, guid: ea2163389b3e3144180158f74c673865,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00004337855
+      value: -0.00000020374073
       objectReference: {fileID: 0}
     - target: {fileID: 7920767298783046268, guid: ea2163389b3e3144180158f74c673865,
         type: 3}
@@ -5072,7 +5072,7 @@ PrefabInstance:
     - target: {fileID: 2378395490598767056, guid: 82170f9370a3e6641b7c8877f02af41d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 47
+      value: 78.48
       objectReference: {fileID: 0}
     - target: {fileID: 2378395490598767056, guid: 82170f9370a3e6641b7c8877f02af41d,
         type: 3}
@@ -7430,7 +7430,7 @@ GameObject:
   - component: {fileID: 2100636492}
   m_Layer: 0
   m_Name: Collider (55)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

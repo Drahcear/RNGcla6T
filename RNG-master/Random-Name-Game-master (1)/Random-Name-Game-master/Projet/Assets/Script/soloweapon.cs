@@ -77,11 +77,13 @@ namespace BestMasterYi
         {
             if (t.tag == "Melee" && facingRight)
             {
-                t.position = new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z);
+                
+                t.position = new Vector3(transform.position.x + 1.5f, transform.position.y+0.1f, transform.position.z);
+                
             }
             else if (t.tag == "Melee" && facingRight == false)
             {
-                t.position = new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z);
+                t.position = new Vector3(transform.position.x - 1.5f, transform.position.y-0.1f, transform.position.z);
             }
             else
             {

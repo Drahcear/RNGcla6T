@@ -83,12 +83,12 @@ namespace BestMasterYi
 
         void shot()
         {
-            WeaponScript weapon = GetComponent<WeaponScript>();
+            soloweapon weapon = GetComponent<soloweapon>();
             if (weapon != null)
             {
                 // false : le joueur n'est pas un ennemi
                 weapon.Attack(false);
-                Sound.Instance.MakePlayerShotSound();
+                    Sound.Instance.MakePlayerShotSound();
             }
         }
 
