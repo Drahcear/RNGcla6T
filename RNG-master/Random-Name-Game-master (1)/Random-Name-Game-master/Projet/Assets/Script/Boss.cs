@@ -4,20 +4,22 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
-{
-
-    public Slider bar;
-
-    public int health;
-    // Start is called before the first frame update
-    void Start()
+{   
+    
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.gameObject.tag == "ground")
+        {
+            transform.position = new Vector2(transform.position.x,other.transform.position.y-200);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerStay2D(Collider2D other)
     {
-        bar.value = health;
+        if (other.gameObject.tag == "ground")
+        {
+            transform.position = new Vector2(transform.position.x,other.transform.position.y-200);
+        }
+    
     }
 }
