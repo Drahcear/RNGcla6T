@@ -16,7 +16,7 @@ namespace BestMasterYi
 
         void Start()
         {
-
+            
         }
 
         // Update is called once per frame
@@ -27,16 +27,21 @@ namespace BestMasterYi
             {
                 recovery -= Time.deltaTime;
             }
-        }
-
+            
+        }                
         void OnCollisionEnter2D(Collision2D other)
-        {
-            if (transform.gameObject.tag == "player" & recovery <= 0)
+        {            
+            if (transform.gameObject.tag == "player" && other.gameObject.tag=="Méchant")
             {
-                health -= 1;
-                recovery = 1.5f;
+                if (recovery <= 0)
+                {
+                    health -= 1;
+                    recovery = 1.5f;
+                }                                
             }
         }
+        
+
 
         private void OnTriggerEnter2D(Collider2D other)
         {

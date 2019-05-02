@@ -148,12 +148,24 @@ namespace BestMasterYi
 
         void OnCollisionEnter2D(Collision2D col)
         {
+            if (col.gameObject.tag == "Méchant")
+            {
+                if (facingRight)
+                    gameObject.GetComponent<Rigidbody2D>().velocity =
+                        new Vector2(-20, 0);
+                else
+                {
+                    gameObject.GetComponent<Rigidbody2D>().velocity =
+                        new Vector2(20, 0);
+                }
+            }
 
             if (col.gameObject.tag == "ground")
             {
                 grounded = true;
                 DoubleJump = 0;
             }
+            Debug.Log(col.gameObject.tag);
         }
 
         void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
