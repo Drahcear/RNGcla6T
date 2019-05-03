@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1729107999}
   - component: {fileID: 1729108000}
   - component: {fileID: 4953198327514792580}
+  - component: {fileID: 5892805867280148685}
   m_Layer: 0
   m_Name: Solo
   m_TagString: player
@@ -260,3 +261,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.57837677, y: 1.0013367}
   m_EdgeRadius: 0
+--- !u!111 &5892805867280148685
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729107991}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0

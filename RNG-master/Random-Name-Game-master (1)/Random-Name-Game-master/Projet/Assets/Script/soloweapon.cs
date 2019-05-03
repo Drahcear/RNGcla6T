@@ -85,10 +85,12 @@ namespace BestMasterYi
             {
                 t.position = new Vector3(transform.position.x - 1.5f, transform.position.y-0.1f, transform.position.z);
             }
-            else
+            else if (t.tag == "Bullet" && facingRight == false)
             {
-                t.position = transform.position;
-            }           
+                t.position = new Vector3(transform.position.x -0.5f, transform.position.y, transform.position.z);
+            } 
+            else if (t.tag == "Bullet" && facingRight == true)
+                t.position = new Vector3(transform.position.x +0.5f, transform.position.y, transform.position.z);
         }
 
         public bool CanAttack

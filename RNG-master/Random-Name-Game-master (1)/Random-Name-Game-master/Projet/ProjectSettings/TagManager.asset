@@ -18,6 +18,8 @@ TagManager:
   - Item
   - Weapon
   - "M\xE9chantshot"
+  - BossCollider
+  - Bullet
   layers:
   - Default
   - TransparentFX

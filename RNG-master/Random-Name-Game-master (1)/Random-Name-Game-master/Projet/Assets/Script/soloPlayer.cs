@@ -14,31 +14,32 @@ namespace BestMasterYi
         public bool facingRight = false;
         private float moveX;
         public float startTime = 0f;
-        float holdTime = 2.0f; // 2 seconds        
+        float holdTime = 1.5f; // 2 seconds        
         private int DoubleJump = 0;
-        public float timer = 0;        
+        public float timer = 0;
         public float BDashCD;
         public float BDashRate;
         public GameObject Equipement;
         public GameObject Inventory;
-        private bool windowsOpen=false;
-        
-        
+        private bool windowsOpen = false;
+        private bool dmg;
+
+
         void Start()
-        {            
-            BDashCD = 0f;                                
+        {
+            BDashCD = 0f;
         }
+
 
 
         void Update()
         {
-
             if (Input.GetKeyDown(KeyCode.P) & windowsOpen == false)
             {
                 Equipement.SetActive(true);
                 Inventory.SetActive(true);
-                windowsOpen = true; 
-                
+                windowsOpen = true;
+
             }
             else if (Input.GetKeyDown(KeyCode.P) & windowsOpen == true)
             {
@@ -46,6 +47,7 @@ namespace BestMasterYi
                 Inventory.SetActive(false);
                 windowsOpen = false;
             }
+
             if (BDashCD > 0)
             {
                 BDashCD -= Time.deltaTime;
@@ -79,6 +81,7 @@ namespace BestMasterYi
                 }
 
             }
+
         }
 
         void shot()
@@ -88,7 +91,7 @@ namespace BestMasterYi
             {
                 // false : le joueur n'est pas un ennemi
                 weapon.Attack(false);
-                    Sound.Instance.MakePlayerShotSound();
+                //Sound.Instance.MakePlayerShotSound();
             }
         }
 
@@ -148,25 +151,18 @@ namespace BestMasterYi
 
         void OnCollisionEnter2D(Collision2D col)
         {
-            if (col.gameObject.tag == "Méchant")
-            {
-                if (facingRight)
-                    gameObject.GetComponent<Rigidbody2D>().velocity =
-                        new Vector2(-20, 0);
-                else
-                {
-                    gameObject.GetComponent<Rigidbody2D>().velocity =
-                        new Vector2(20, 0);
-                }
-            }
+
 
             if (col.gameObject.tag == "ground")
             {
                 grounded = true;
                 DoubleJump = 0;
             }
+
             Debug.Log(col.gameObject.tag);
         }
+
+
 
         void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
@@ -181,5 +177,22 @@ namespace BestMasterYi
             get { return BDashCD <= 0f; }
         }
 
+        public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector3 knockbackDir)
+        {
+
+            float timer = 0;
+            gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            while (knockDur > timer)
+            {
+
+                timer += Time.deltaTime;
+
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(-knockbackDir.x , -knockbackDir.y + knockbackPwr, transform.position.z));
+
+            }
+
+            yield return 0;
+
+        }
     }
 }
