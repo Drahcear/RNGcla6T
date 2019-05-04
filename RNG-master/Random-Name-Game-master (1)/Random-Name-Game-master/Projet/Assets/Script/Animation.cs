@@ -22,9 +22,7 @@ namespace BestMasterYi
             else
             {
                 Animé.SetBool("IsRunning",false);
-            }
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-                Animé.SetTrigger("Jump");
+            }            
             if (Input.GetKeyDown(KeyCode.Space))
                 Animé.SetTrigger("IsAttacking");
             else

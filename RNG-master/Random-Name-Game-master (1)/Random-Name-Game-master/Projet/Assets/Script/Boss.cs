@@ -1,25 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using BestMasterYi;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Boss : MonoBehaviour
-{   
-    
-    private void OnTriggerEnter2D(Collider2D other)
+namespace BestMasterYi
+{
+    public class Boss : MonoBehaviour
     {
-        if (other.gameObject.tag == "ground")
-        {
-            transform.position = new Vector2(transform.position.x,other.transform.position.y-200);
-        }
-    }
+        private Animator animé;
 
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "ground")
+
+
+        private void Start()
         {
-            transform.position = new Vector2(transform.position.x,other.transform.position.y-200);
+            animé = GetComponent<Animator>();
         }
+
+        private void Update()
+        {
+            if (GetComponent<viesolo>().health <= 25)
+            {
+                animé.SetTrigger("Stage2");
+            }
+
+            if (GetComponent<viesolo>().health <= 0)
+            {
+                animé.SetTrigger("Dead");
+                
     
+                Destroy(gameObject,1f) ;
+            }
+        }
     }
 }

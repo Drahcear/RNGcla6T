@@ -23,15 +23,14 @@ namespace BestMasterYi
         public GameObject Inventory;
         private bool windowsOpen = false;
         private bool dmg;
+        private Animator Animé;
 
 
         void Start()
         {
             BDashCD = 0f;
+            Animé = GetComponent<Animator>();
         }
-
-
-
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.P) & windowsOpen == false)
@@ -82,6 +81,11 @@ namespace BestMasterYi
 
             }
 
+            if (grounded)
+            {
+                Animé.SetBool("Jumping", false);
+                Animé.SetBool("grounded", true);
+            }
         }
 
         void shot()
@@ -115,7 +119,7 @@ namespace BestMasterYi
             else if (moveX < 0.0f && facingRight == true)
             {
                 FlipPlayer();
-
+    
             }
 
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed,
@@ -124,6 +128,9 @@ namespace BestMasterYi
 
         void Jump()
         {
+            Animé.SetBool("Jumping",true);
+            Animé.SetBool("grounded", false);
+            
             grounded = false;
 
             if (DoubleJump == 1)

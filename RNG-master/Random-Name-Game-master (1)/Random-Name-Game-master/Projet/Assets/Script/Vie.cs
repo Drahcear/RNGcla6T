@@ -45,8 +45,9 @@ namespace BestMasterYi
                     hp -= shot.damage;
                     // Destruction du projectile
                     // On détruit toujours le gameObject associé
+                    if (other.gameObject.tag == "Bullet")
 
-                    Destroy(shot.gameObject);
+                        Destroy(shot.gameObject);
                 }
                 if (hp <= 0)
                 {

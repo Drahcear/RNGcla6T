@@ -9,7 +9,7 @@ namespace BestMasterYi
 
         public Transform shotPrefab;
         public Transform shotPrefab2;
-        public  bool facingRight = false;
+        public  bool facingRight = true;
         public float shootingRate = 0.5f;
 
 
@@ -30,11 +30,9 @@ namespace BestMasterYi
             {
                 shootCooldown -= Time.deltaTime;
             }
-
-            soloPlayer dir = GetComponent<soloPlayer>();
-            if (facingRight != dir.facingRight)
-                Flip();
-            facingRight = dir.facingRight;
+             
+            if (facingRight != transform.GetComponent<soloPlayer>().facingRight)
+                Flip();            
         }
 
 
@@ -100,7 +98,7 @@ namespace BestMasterYi
 
         void Flip()
         {
-            
+            facingRight = !facingRight;
             shotPrefab.Rotate(0f, 180f, 0f);
         }
 
