@@ -24,12 +24,15 @@ namespace BestMasterYi
         public float timer = 0;
         public static GameObject LocalPlayerInstance;
         public float BDashCD;
-        public float BDashRate;                
+        public float BDashRate;    
+        private Animator Animé;
         private Vie barmanager;        
 
         void Start()
         {   
-            BDashCD = 0f;                        
+            BDashCD = 0f;  
+            Animé = GetComponent<Animator>();
+            
             
         }
         void Awake()
@@ -78,6 +81,11 @@ namespace BestMasterYi
                         startTime = 0f;
                     }
                 }
+                if (grounded)
+                {
+                    Animé.SetBool("Jumping", false);
+                    Animé.SetBool("grounded", true);
+                }
                 transform.GetComponent<Vie>().getBar().GetComponent<HPBAR>().SetSize(transform.GetComponent<Vie>().getx()*transform.GetComponent<Vie>().hp);
             }
         }    
@@ -120,6 +128,8 @@ namespace BestMasterYi
 
         void Jump()
         {
+            Animé.SetBool("Jumping",true);
+            Animé.SetBool("grounded", false);
             grounded = false;   
            
             if (DoubleJump == 1)
@@ -166,6 +176,22 @@ namespace BestMasterYi
         {
             get { return BDashCD <= 0f; }
         }
-        
+        public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector3 knockbackDir)
+        {
+
+            float timer = 0;
+            gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            while (knockDur > timer)
+            {
+
+                timer += Time.deltaTime;
+
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(-knockbackDir.x , -knockbackDir.y + knockbackPwr, transform.position.z));
+
+            }
+
+            yield return 0;
+
+        }
     }
 }

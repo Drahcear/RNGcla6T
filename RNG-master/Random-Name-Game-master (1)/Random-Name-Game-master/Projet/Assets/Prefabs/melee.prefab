@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249}
-  m_LocalRotation: {x: -0, y: -1, z: 0, w: 0.000009529063}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.000017484552}
   m_LocalPosition: {x: 0.743, y: 0.7421, z: 1}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7054b9b64e4179f498400ae8d354fefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 1
   isEnemyShot: 0
 --- !u!95 &7456372284117133469
 Animator:

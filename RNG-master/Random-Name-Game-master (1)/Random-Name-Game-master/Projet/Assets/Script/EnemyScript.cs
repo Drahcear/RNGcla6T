@@ -86,6 +86,24 @@ namespace BestMasterYi
                     weapon.Attack(true);
                 }
             }*/
+            
+        }
+        public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector3 knockbackDir)
+        {
+
+            float timer = 0;
+            gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            while (knockDur > timer)
+            {
+
+                timer += Time.deltaTime;
+
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(-knockbackDir.x , -knockbackDir.y + knockbackPwr, transform.position.z));
+
+            }
+
+            yield return 0;
+
         }
 
     

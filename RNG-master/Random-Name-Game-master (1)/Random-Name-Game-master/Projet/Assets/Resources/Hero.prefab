@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 534}
   - component: {fileID: 5459931695551802505}
   - component: {fileID: 114780017440980690}
+  - component: {fileID: 8727987709460301050}
   m_Layer: 0
   m_Name: Hero
   m_TagString: player
@@ -308,12 +309,15 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 2
     Name: IsRunning
-  - Type: 9
-    SynchronizeType: 2
-    Name: Jump
   - Type: 4
     SynchronizeType: 0
     Name: IsAttacking
+  - Type: 4
+    SynchronizeType: 0
+    Name: grounded
+  - Type: 4
+    SynchronizeType: 0
+    Name: Jumping
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0
@@ -363,3 +367,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c29a0ce3a5c9248a81276b545fd66c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &8727987709460301050
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4ab88de9d1c27e643987392cc67bd0d9, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 4ab88de9d1c27e643987392cc67bd0d9, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0

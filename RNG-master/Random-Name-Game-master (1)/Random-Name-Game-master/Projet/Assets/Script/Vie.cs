@@ -14,6 +14,7 @@ namespace BestMasterYi
         private GameObject bar;
         private double dmgtobar;
         private float x;
+        private PlayerScript player;
         private string scene = "MainMenu";
 
         void Start()
@@ -22,7 +23,9 @@ namespace BestMasterYi
             bar = GameObject.Find("HPBAR");
             dmgtobar = 1.0 / hp;
             x = (float) dmgtobar;
+            player = GameObject.FindGameObjectWithTag("player").GetComponent<PlayerScript>();
         }
+        
 
         public float getx()
         {
@@ -43,8 +46,16 @@ namespace BestMasterYi
                 if (shot.isEnemyShot != isEnemy)
                 {
                     hp -= shot.damage;
-                    // Destruction du projectile
-                    // On détruit toujours le gameObject associé
+                    if (transform.gameObject.tag == "player")
+                    {
+                        player.GetComponent<UnityEngine.Animation>().Play("Dmgtaken");
+                        StartCoroutine(player.Knockback(0.02f, 150,player.transform.position));
+                    }
+                    if (transform.gameObject.tag == "Méchant")
+                    {
+                        //transform.GetComponent<UnityEngine.Animation>().Play("Dmgtaken");
+                        StartCoroutine(transform.gameObject.GetComponent<EnemyScript>().Knockback(0.05f, 150,transform.position));
+                    }
                     if (other.gameObject.tag == "Bullet")
 
                         Destroy(shot.gameObject);
@@ -62,6 +73,8 @@ namespace BestMasterYi
             if (transform.gameObject.tag == "player" && collider.gameObject.CompareTag("Méchant"))
             {
                 hp -= 1;
+                player.GetComponent<UnityEngine.Animation>().Play("DmgTaken");
+                StartCoroutine(player.Knockback(0.02f, 150,player.transform.position));
             }
 
             if (hp <= 0)
