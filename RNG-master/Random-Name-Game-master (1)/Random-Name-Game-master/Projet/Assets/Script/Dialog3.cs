@@ -8,7 +8,9 @@ namespace BestMasterYi
     public class Dialog3 : MonoBehaviour
     {
         public TextMeshProUGUI textDisplay;
-        public string[] sentences;
+        public string[] sentencesEN;
+        public string[] sentencesFR;
+        private string[] sentences;
         private int index;
         public float typingSpeed;
         public GameObject continueButton;
@@ -17,9 +19,18 @@ namespace BestMasterYi
 
         void Start()
         {
-            count = sentences.Length;
             index = 0;       
-            StartCoroutine(Type());           
+            switch (PersistantManagerScript.Instance.language)
+            {
+                case "en":
+                    sentences = sentencesEN;
+                    break;
+                default:
+                    sentences = sentencesFR;
+                    break;
+            }
+            count = sentences.Length;
+            StartCoroutine(Type());
         }
         
         

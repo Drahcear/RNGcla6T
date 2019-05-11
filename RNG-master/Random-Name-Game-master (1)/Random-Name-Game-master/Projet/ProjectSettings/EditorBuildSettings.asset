@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tuto.unity
     guid: 161579fe617856e4b81b93b0396db22e
+  - enabled: 1
+    path: Assets/Scenes/LanguageMenu.unity
+    guid: 102a8c93128b10e4fab1b0c539c985aa
   m_configObjects: {}

@@ -12,6 +12,7 @@ namespace BestMasterYi
         public int money;
         public string perso;
         public string level;
+        public string language;
 
         private void Awake()
         {
