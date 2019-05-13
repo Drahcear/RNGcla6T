@@ -1341,7 +1341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a029c4f9d4c564b8aaf0ed16cf1676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: MainMenu
+  Scene: LevelSelect
   Perso: 
 --- !u!114 &1051211795
 MonoBehaviour:

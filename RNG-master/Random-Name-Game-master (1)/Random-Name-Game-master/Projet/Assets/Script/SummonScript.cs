@@ -9,42 +9,55 @@ namespace BestMasterYi
 {
     public class SummonScript : MonoBehaviour
     {
-        private int Money;
-
+        public string type;
+        public int cost;
         public List<GameObject> L; 
         public List<string> Mcharacter;
         public List<string> Rcharacter;
         public List<string> Ccharacter;
-
+        public string[,] Object;
+        
+        
         private int n;
         public int M;
         public int R;
 
         public void Pull()
         {
-            string s = "";
-            n = Random.Range(0, 101);
-            if (n <= M)
+            if (PersistantManagerScript.Instance.money >= cost)
             {
-                s = Mcharacter[Random.Range(0, Mcharacter.Count)];
-                PersistantManagerScript.Instance.summoned.Add(s);
-            }
-            else if (n <= M + R)
-            {
-                s = Rcharacter[Random.Range(0, Rcharacter.Count)];
-                PersistantManagerScript.Instance.summoned.Add(s);
-            }
-            else
-            {
-                s = Ccharacter[Random.Range(0, Ccharacter.Count)];
-                PersistantManagerScript.Instance.summoned.Add(s);
-            }
+                PersistantManagerScript.Instance.money -= cost;
+                string s = "";
+                n = Random.Range(0, 101);
+                if (n <= M)
+                {
+                    s = Mcharacter[Random.Range(0, Mcharacter.Count)];
+                }
+                else if (n <= M + R)
+                {
+                    s = Rcharacter[Random.Range(0, Rcharacter.Count)];
+                }
+                else
+                {
+                    s = Ccharacter[Random.Range(0, Ccharacter.Count)];
+                }
+                foreach (var o in L)
+                {
+                    if(o.name == s+"_artwork")
+                        o.SetActive(true);
+                }
 
-            foreach (var o in L)
-            {
-                if(o.name == s+"_artwork")
-                    o.SetActive(true);
+                if (type == "Hero")
+                {
+                    PersistantManagerScript.Instance.summoned.Add(s);
+                }
+                else
+                    PersistantManagerScript.Instance.artifact.Add(s);
             }
         }
+
+        
+        
+        
     }
 }

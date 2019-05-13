@@ -8,11 +8,16 @@ namespace BestMasterYi
     {
         public static PersistantManagerScript Instance { get; private set; }
 
+        public List<string> artifact;
         public List<string> summoned;
         public int money;
         public string perso;
         public string level;
         public string language;
+
+        public List<int> HeroModif;
+        public List<int> TankModif;
+        public List<int> ChevalierModif;
 
         private void Awake()
         {
