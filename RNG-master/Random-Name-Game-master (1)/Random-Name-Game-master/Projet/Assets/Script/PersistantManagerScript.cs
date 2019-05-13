@@ -19,6 +19,8 @@ namespace BestMasterYi
         public List<int> TankModif;
         public List<int> ChevalierModif;
 
+        public string SelectItem;
+        
         private void Awake()
         {
             if (Instance == null)

@@ -50,6 +50,21 @@ namespace BestMasterYi
                 if (type == "Hero")
                 {
                     PersistantManagerScript.Instance.summoned.Add(s);
+                    switch (s)
+                    {
+                        case "Tank":
+                            PersistantManagerScript.Instance.TankModif[0] += 8;
+                            PersistantManagerScript.Instance.TankModif[1] += 1;
+                            break;
+                        case "Chevalier":
+                            PersistantManagerScript.Instance.ChevalierModif[0] += 6;
+                            PersistantManagerScript.Instance.ChevalierModif[1] += 3;
+                            break;
+                        default:
+                            PersistantManagerScript.Instance.HeroModif[0] += 3;
+                            PersistantManagerScript.Instance.HeroModif[1] += 6;
+                            break;
+                    }
                 }
                 else
                     PersistantManagerScript.Instance.artifact.Add(s);

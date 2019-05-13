@@ -714,9 +714,7 @@ MonoBehaviour:
   - {fileID: 1881469760}
   - {fileID: 764818633}
   Mcharacter:
-  - Complexifieur atomique
-  - MKII Sword
-  - Infinity glove
+  - Sword
   Rcharacter: []
   Ccharacter: []
   M: 101
@@ -1350,7 +1348,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 126.24414, y: -34.36145}
+  m_AnchoredPosition: {x: 126.24414, y: -34.36133}
   m_SizeDelta: {x: 166.9, y: 46.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1586909717
@@ -1551,8 +1549,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Pull
+      - m_Target: {fileID: 1659337644}
+        m_MethodName: Sceneload
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

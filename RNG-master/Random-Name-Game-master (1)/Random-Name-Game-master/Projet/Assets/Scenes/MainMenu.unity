@@ -774,7 +774,7 @@ MonoBehaviour:
   perso: Hero
   level: Stage1
   language: fr
-  HeroModif: 0000000000000000
+  HeroModif: 0300000006000000
   TankModif: 0000000000000000
   ChevalierModif: 0000000000000000
 --- !u!4 &1071254394
