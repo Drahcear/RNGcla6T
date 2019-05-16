@@ -271,7 +271,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\nNiveau 1\n\nPv: 120+0 \n\nAttaque: 20+0\n\n"
+  m_Text: "\nNiveau 1\n\nPv: 120+3 \n\nAttaque: 20+6\n\n"
 --- !u!222 &11171576
 CanvasRenderer:
   m_ObjectHideFlags: 0

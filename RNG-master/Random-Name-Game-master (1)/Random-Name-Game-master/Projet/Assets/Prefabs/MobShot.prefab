@@ -156,5 +156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7054b9b64e4179f498400ae8d354fefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  perso: mob
   damage: 1
   isEnemyShot: 1

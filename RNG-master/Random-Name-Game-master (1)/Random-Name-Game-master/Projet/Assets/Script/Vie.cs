@@ -9,6 +9,7 @@ namespace BestMasterYi
     public class Vie : MonoBehaviour
     {
         private float maxHp;
+        public string perso;
         public float hp;
         public bool isEnemy = true;
         private GameObject bar;
@@ -19,6 +20,18 @@ namespace BestMasterYi
 
         void Start()
         {
+            switch (perso)
+            {
+                case "Tank":
+                    hp += PersistantManagerScript.Instance.TankModif[0];
+                    break;
+                case "Chevalier":
+                    hp += PersistantManagerScript.Instance.ChevalierModif[0];
+                    break;
+                default:
+                    hp += PersistantManagerScript.Instance.HeroModif[0];
+                    break;
+            }
             maxHp = hp;
             bar = GameObject.Find("HPBAR");
             dmgtobar = 1.0 / hp;

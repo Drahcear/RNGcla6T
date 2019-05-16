@@ -7,7 +7,8 @@ namespace BestMasterYi
 {
     public class Shot : MonoBehaviour
     {
-    
+
+        public string perso;
         public int damage = 1;
 
         /// <summary>
@@ -25,6 +26,18 @@ namespace BestMasterYi
 
         void Start()
         {
+            switch (perso)
+            {
+                case "Tank":
+                    damage += PersistantManagerScript.Instance.TankModif[1];
+                    break;
+                case "Chevalier":
+                    damage += PersistantManagerScript.Instance.ChevalierModif[1];
+                    break;
+                default:
+                    damage += PersistantManagerScript.Instance.HeroModif[1];
+                    break;
+            }
             // 2 - Destruction programmée
             if (gameObject.tag == "Melee")
                 Destroy(gameObject, 1f);            

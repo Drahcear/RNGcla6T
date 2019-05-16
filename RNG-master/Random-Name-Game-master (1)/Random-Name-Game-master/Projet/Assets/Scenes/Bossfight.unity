@@ -408,14 +408,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 1729107992, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729107992, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1729107996, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.55
@@ -484,6 +476,14 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1729107992, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729107992, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
         type: 3}
       propertyPath: bar
@@ -492,7 +492,12 @@ PrefabInstance:
     - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
         type: 3}
       propertyPath: health
-      value: 10
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
+        type: 3}
+      propertyPath: perso
+      value: Hero
       objectReference: {fileID: 0}
     - target: {fileID: 1729107997, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
       propertyPath: hp
@@ -1707,9 +1712,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 50
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 50
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1851,9 +1856,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 10
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 10
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1946,6 +1951,16 @@ PrefabInstance:
       propertyPath: bc
       value: 
       objectReference: {fileID: 1262112577}
+    - target: {fileID: 7392023623173040650, guid: 3627be60150d0b549ab3ebc5d318731b,
+        type: 3}
+      propertyPath: perso
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 7392023623173040650, guid: 3627be60150d0b549ab3ebc5d318731b,
+        type: 3}
+      propertyPath: health
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7392023623173040757, guid: 3627be60150d0b549ab3ebc5d318731b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3627be60150d0b549ab3ebc5d318731b, type: 3}

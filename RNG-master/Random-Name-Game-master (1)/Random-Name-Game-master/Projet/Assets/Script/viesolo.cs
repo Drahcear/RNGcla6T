@@ -13,11 +13,20 @@ namespace BestMasterYi
         private float recovery;
         private soloPlayer player;
         public int health;
+        public string perso;
 
         void Start()
         {
           Physics2D.IgnoreLayerCollision(8,9);  
-            player = GameObject.FindGameObjectWithTag("player").GetComponent<soloPlayer>();
+          player = GameObject.FindGameObjectWithTag("player").GetComponent<soloPlayer>();
+          switch (perso)
+          {
+            case "Boss":
+                break;
+            default:
+                health += PersistantManagerScript.Instance.HeroModif[0];
+                break;
+          }
         }
 
         // Update is called once per frame
@@ -37,7 +46,7 @@ namespace BestMasterYi
             {
                 if (recovery <= 0)
                 {
-                    health -= 1;
+                    health -= 30;
                     recovery = 1.5f;
                     player.GetComponent<UnityEngine.Animation>().Play("Dmgtaken");
                     StartCoroutine(player.Knockback(0.02f, 150,player.transform.position));
