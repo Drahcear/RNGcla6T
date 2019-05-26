@@ -32,10 +32,8 @@ namespace BestMasterYi
                     hp += PersistantManagerScript.Instance.HeroModif[0];
                     break;
             }
-            maxHp = hp;
-            bar = GameObject.Find("HPBAR");
-            dmgtobar = 1.0 / hp;
-            x = (float) dmgtobar;
+            
+            
             player = GameObject.FindGameObjectWithTag("player").GetComponent<PlayerScript>();
         }
         
@@ -96,7 +94,7 @@ namespace BestMasterYi
                 photonView.RPC("DestroyTarget", RpcTarget.All, null);
             }
 
-            bar.GetComponent<HPBAR>().SetSize(x * hp);
+//            bar.GetComponent<HPBAR>().SetSize(x * hp);
         }
     
 

@@ -32,7 +32,7 @@ namespace BestMasterYi
         // Update is called once per frame
         void Update()
         {
-            bar.value = health;
+            //bar.value = health;
             if (recovery > 0)
             {
                 recovery -= Time.deltaTime;
