@@ -452,6 +452,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
+        type: 3}
+      propertyPath: bar
+      value: 
+      objectReference: {fileID: 2056634516}
+    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
+        type: 3}
+      propertyPath: health
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
+        type: 3}
+      propertyPath: perso
+      value: Hero
+      objectReference: {fileID: 0}
     - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
       propertyPath: m_SortingOrder
       value: 99
@@ -484,24 +499,13 @@ PrefabInstance:
       propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
-        type: 3}
-      propertyPath: bar
-      value: 
-      objectReference: {fileID: 2056634516}
-    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
-        type: 3}
-      propertyPath: health
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
-        type: 3}
-      propertyPath: perso
-      value: Hero
-      objectReference: {fileID: 0}
     - target: {fileID: 1729107997, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
       propertyPath: hp
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729108000, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: facingRight
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4953198327514792580, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
         type: 3}

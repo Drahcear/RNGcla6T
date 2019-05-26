@@ -30,6 +30,7 @@ namespace BestMasterYi
         {
             BDashCD = 0f;
             Animé = GetComponent<Animator>();
+            
         }
         void Update()
         {

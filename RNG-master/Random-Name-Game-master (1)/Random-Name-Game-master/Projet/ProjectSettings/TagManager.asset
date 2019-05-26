@@ -20,6 +20,7 @@ TagManager:
   - "M\xE9chantshot"
   - BossCollider
   - Bullet
+  - Dialogevent
   layers:
   - Default
   - TransparentFX

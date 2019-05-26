@@ -52,4 +52,12 @@ public class DialogueManager : MonoBehaviour
         DText.text = Dialogue;
 
     }
+
+    public void ShowDialogue()
+    {
+        DialogActive = true;
+        DiaBox.SetActive(true);
+        
+    }
+    
 }

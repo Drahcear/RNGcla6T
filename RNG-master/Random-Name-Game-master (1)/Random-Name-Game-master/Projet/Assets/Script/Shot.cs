@@ -40,7 +40,7 @@ namespace BestMasterYi
             }
             // 2 - Destruction programmée
             if (gameObject.tag == "Melee")
-                Destroy(gameObject, 1f);            
+                Destroy(gameObject, 0.5f);            
         }
         void OnBecameInvisible() {
             Destroy(gameObject);
