@@ -624,8 +624,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 5.9, y: 115.5}
-  m_SizeDelta: {x: 1524.1, y: 216.3}
+  m_AnchoredPosition: {x: 5.9, y: 100.6001}
+  m_SizeDelta: {x: 1524.1, y: 186.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &708595427
 MonoBehaviour:
@@ -1285,7 +1285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951897108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.887142, y: 93.553604, z: -9}
+  m_LocalPosition: {x: -48.061714, y: 93.553604, z: -9}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1816,10 +1816,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: wshalors
   diaLines:
-  - 'j''ouvre '
-  - 'le bal '
-  - sale sale
-  - demsdemsdems
+  - 'Instructor : Your basic training is finished.'
+  - 'Instructor : There are special move that you only can perform and you have to
+    find them.'
+  - 'Instructor : Be careful in the dungeon or when protecting the city we are really
+    grateful that you guys decided to join the army.'
+  - 'Instructor : You have officialy finished the training congratulation. Go ahead
+    and get your licence.'
 --- !u!1 &1501979272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +1836,7 @@ GameObject:
   - component: {fileID: 1501979276}
   - component: {fileID: 1501979274}
   - component: {fileID: 1501979273}
+  - component: {fileID: 1501979275}
   m_Layer: 0
   m_Name: mob3
   m_TagString: Untagged
@@ -1887,6 +1891,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &1501979275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501979272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b41b1f5f192f3489ebf5f579516562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: lol
+  diaLines:
+  - 'Instructor : You can attack ennemies by pressing space. I f you charge it enough
+    time you can perform your secondary attack.'
+  - 'Instructor : Try hitting the target next to me. He will turn red and lose hp
+    if you manage to land an attack correctly.'
+  - 'Instructor : If you have finished continue your way.'
 --- !u!61 &1501979276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2027,7 +2050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517922500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.887142, y: 93.553604, z: -9}
+  m_LocalPosition: {x: -48.061714, y: 93.553604, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1789382195}
@@ -2339,10 +2362,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: Yahallo!
   diaLines:
-  - yo
-  - pd
-  - sale
-  - tres sale
+  - 'Instructor : Hey rookie your name is Hero right?'
+  - 'Hero : Yes!'
+  - 'Instructor : (What an enthusiastic one) I am here to teach you how to fight.
+    But first I have to warn you: this will be a harsh adventure. With demons that
+    are breaking free from the dungeon the population is in danger that is why we
+    need solder like you. I heard that they are controlled by a certain Owaligor. '
+  - 'Instructor : What is even more scary is that is at least a hundred times more
+    powerful than our legendary hero : BestEZREALEUW.'
+  - 'Hero : N...No way!'
+  - 'Instructor : That is true coming right from the mouth of him. He was defeated
+    in a blink of an eye using only one arm.'
+  - 'Hero : What the f...(He is busted lul).'
+  - 'Instructor : I don''t know if we will be able to defeat him. If not you can say
+    goodbye to the resident of the Aeria and even the world.'
+  - 'Instructor : Enough talk let''s proceed to your training. Move to the right until
+    you meet another instructor and press L to talk to him. You can move using the
+    arrow keys and space to jump.'
 --- !u!61 &1835201423
 BoxCollider2D:
   m_ObjectHideFlags: 0
