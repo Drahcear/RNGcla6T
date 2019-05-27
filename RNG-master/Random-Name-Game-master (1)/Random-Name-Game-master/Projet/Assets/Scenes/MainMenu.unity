@@ -777,6 +777,7 @@ MonoBehaviour:
   HeroModif: 0300000006000000
   TankModif: 0000000000000000
   ChevalierModif: 0000000000000000
+  SelectItem: 
 --- !u!4 &1071254394
 Transform:
   m_ObjectHideFlags: 0

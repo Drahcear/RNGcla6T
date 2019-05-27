@@ -12,8 +12,9 @@ namespace BestMasterYi
         public bool isEnemy;
         private float recovery;
         private soloPlayer player;
-        public int health;
+        public float health;
         public string perso;
+        private float maxhealth;
 
         void Start()
         {
@@ -27,12 +28,14 @@ namespace BestMasterYi
                 health += PersistantManagerScript.Instance.HeroModif[0];
                 break;
           }
+
+            maxhealth = health;
         }
 
         // Update is called once per frame
         void Update()
         {
-            //bar.value = health;
+            bar.value = health/maxhealth;
             if (recovery > 0)
             {
                 recovery -= Time.deltaTime;

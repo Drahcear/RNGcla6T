@@ -9,6 +9,8 @@ namespace BestMasterYi
     public class Boss : MonoBehaviour
     {
         private Animator animé;
+        public GameObject last;
+        
 
 
 
@@ -19,7 +21,7 @@ namespace BestMasterYi
 
         private void Update()
         {
-            if (GetComponent<viesolo>().health <= 25)
+            if (GetComponent<viesolo>().health <= 500)
             {
                 animé.SetTrigger("Stage2");
             }
@@ -30,6 +32,9 @@ namespace BestMasterYi
                 
     
                 Destroy(gameObject,1f) ;
+                
+                last.SetActive(true);
+                
             }
         }
     }

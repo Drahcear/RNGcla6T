@@ -44,6 +44,7 @@ namespace BestMasterYi
 
         private void OnTriggerStay2D(Collider2D other)
         {
+       
             if (other.gameObject.tag == "player")
             {
                 Debug.Log("tr");

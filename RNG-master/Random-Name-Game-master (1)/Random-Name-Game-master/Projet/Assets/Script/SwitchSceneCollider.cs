@@ -12,6 +12,7 @@ namespace BestMasterYi
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (other.gameObject.tag == "player")
             SceneManager.LoadScene(Scene);
         }
     }
