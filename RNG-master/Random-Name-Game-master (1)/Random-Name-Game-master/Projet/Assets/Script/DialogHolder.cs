@@ -3,56 +3,71 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class DialogHolder : MonoBehaviour
+namespace BestMasterYi
 {
-    public string dialogue;
 
-    private DialogueManager dMan;
-    private bool ev = false;
-
-    public string[] diaLines;
-    // Start is called before the first frame update
-    void Start()
+    public class DialogHolder : MonoBehaviour
     {
-        dMan = FindObjectOfType<DialogueManager>();
-        if (transform.gameObject.tag == "Dialogevent")
+        public string dialogue;
+
+        private DialogueManager dMan;
+        private bool ev = false;
+        public string[] ENdiaLines;
+        public string[] FRdiaLines;
+        private string[] diaLines;
+
+        // Start is called before the first frame update
+        void Start()
         {
-            ev = true;
-        }
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "player")
-        {
-            Debug.Log("tr");
-            if (Input.GetKeyUp(KeyCode.L))
+            switch (PersistantManagerScript.Instance.language)
             {
-                //dMan.showbox(dialogue);
-
-                if (!dMan.DialogActive)
-                {
-                    dMan.DialogLines = diaLines;
-                    dMan.currentLine = 0;
-                  dMan.ShowDialogue(); 
-                }
+                case "en":
+                    diaLines = ENdiaLines;
+                    break;
+                default:
+                    diaLines = FRdiaLines;
+                    break;
+            }
+            dMan = FindObjectOfType<DialogueManager>();
+            if (transform.gameObject.tag == "Dialogevent")
+            {
+                ev = true;
             }
 
-            if (ev)
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        private void OnTriggerStay2D(Collider2D other)
+        {
+            if (other.gameObject.tag == "player")
             {
-                if (!dMan.DialogActive)
+                Debug.Log("tr");
+                if (Input.GetKeyUp(KeyCode.L))
                 {
-                    dMan.DialogLines = diaLines;
-                    dMan.currentLine = 0;
-                    dMan.ShowDialogue();
-                    ev = !ev;
+                    //dMan.showbox(dialogue);
+
+                    if (!dMan.DialogActive)
+                    {
+                        dMan.DialogLines = diaLines;
+                        dMan.currentLine = 0;
+                        dMan.ShowDialogue();
+                    }
+                }
+
+                if (ev)
+                {
+                    if (!dMan.DialogActive)
+                    {
+                        dMan.DialogLines = diaLines;
+                        dMan.currentLine = 0;
+                        dMan.ShowDialogue();
+                        ev = !ev;
+                    }
                 }
             }
         }

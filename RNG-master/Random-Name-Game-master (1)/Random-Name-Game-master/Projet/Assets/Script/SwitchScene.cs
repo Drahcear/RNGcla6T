@@ -41,5 +41,7 @@ namespace BestMasterYi
             else
                 SceneManager.LoadScene(Scene);
         }
+        
+        
     }
 }
