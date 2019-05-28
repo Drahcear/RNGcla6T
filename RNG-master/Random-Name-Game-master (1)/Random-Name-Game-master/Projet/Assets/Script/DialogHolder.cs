@@ -47,7 +47,6 @@ namespace BestMasterYi
        
             if (other.gameObject.tag == "player")
             {
-                Debug.Log("tr");
                 if (Input.GetKeyUp(KeyCode.L))
                 {
                     //dMan.showbox(dialogue);

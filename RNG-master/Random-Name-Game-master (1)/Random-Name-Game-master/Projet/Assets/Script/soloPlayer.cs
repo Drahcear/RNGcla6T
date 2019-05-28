@@ -19,9 +19,7 @@ namespace BestMasterYi
         public float timer = 0;
         public float BDashCD;
         public float BDashRate;
-        public GameObject Equipement;
-        public GameObject Inventory;
-        private bool windowsOpen = false;
+        
         private bool dmg;
         private Animator Animé;
 
@@ -33,21 +31,7 @@ namespace BestMasterYi
             
         }
         void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.P) & windowsOpen == false)
-            {
-                Equipement.SetActive(true);
-                Inventory.SetActive(true);
-                windowsOpen = true;
-
-            }
-            else if (Input.GetKeyDown(KeyCode.P) & windowsOpen == true)
-            {
-                Equipement.SetActive(false);
-                Inventory.SetActive(false);
-                windowsOpen = false;
-            }
-
+        { 
             if (BDashCD > 0)
             {
                 BDashCD -= Time.deltaTime;
@@ -167,7 +151,7 @@ namespace BestMasterYi
                 DoubleJump = 0;
             }
 
-            Debug.Log(col.gameObject.tag);
+            
         }
 
 

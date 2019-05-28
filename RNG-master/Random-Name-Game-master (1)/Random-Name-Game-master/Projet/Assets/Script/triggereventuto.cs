@@ -21,6 +21,6 @@ public class triggereventuto : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag=="player")
-        trigger.SetActive(true);
+                trigger.SetActive(true);
     }
 }
