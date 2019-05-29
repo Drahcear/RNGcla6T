@@ -41,11 +41,26 @@ namespace BestMasterYi
                 recovery -= Time.deltaTime;
             }      
             
-        }                               
+        }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.gameObject.tag == "Méchant")
+            {
+                if (recovery <= 0)
+                {
+                    health -= 30;
+                    recovery = 1.5f;
+                    player.GetComponent<UnityEngine.Animation>().Play("Dmgtaken");
+                    StartCoroutine(player.Knockback(0.02f, 150, player.transform.position));
+
+                }
+            }
+        }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (transform.gameObject.tag == "player" && other.gameObject.tag=="BossCollider")
+            if (transform.gameObject.tag == "player" && other.gameObject.tag=="BossCollider" )
             {
                 if (recovery <= 0)
                 {
@@ -56,6 +71,7 @@ namespace BestMasterYi
                     
                 }                                
             }
+            
             Shot shot = other.gameObject.GetComponent<Shot>();
             if (shot != null)
             {
