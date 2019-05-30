@@ -60,7 +60,7 @@ namespace BestMasterYi
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (transform.gameObject.tag == "player" && other.gameObject.tag=="BossCollider" )
+            if (transform.gameObject.tag == "player" && (other.gameObject.tag=="BossCollider" || other.gameObject.tag =="Méchantshot" ))
             {
                 if (recovery <= 0)
                 {

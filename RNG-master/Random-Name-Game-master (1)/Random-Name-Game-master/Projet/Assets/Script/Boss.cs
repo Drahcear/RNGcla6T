@@ -10,13 +10,14 @@ namespace BestMasterYi
     {
         private Animator animé;
         public GameObject last;
-        
+        public GameObject sound;
 
 
 
         private void Start()
         {
             animé = GetComponent<Animator>();
+            sound.SetActive(true);
         }
 
         private void Update()
