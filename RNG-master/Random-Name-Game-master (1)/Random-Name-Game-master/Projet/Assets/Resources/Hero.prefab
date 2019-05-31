@@ -52,7 +52,6 @@ GameObject:
   - component: {fileID: 5103687166009565405}
   - component: {fileID: 534}
   - component: {fileID: 5459931695551802505}
-  - component: {fileID: 114780017440980690}
   - component: {fileID: 8727987709460301050}
   m_Layer: 0
   m_Name: Hero
@@ -210,7 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 387, guid: b3d3443e75696264686584f8429d2ec2, type: 3}
-  shotPrefab2: {fileID: 7339689191114626214, guid: a3147e30b2deae24394e2f645e8a7460,
+  shotPrefab2: {fileID: 655532043920584449, guid: 677115ce80ae22f41b38a382474d819a,
     type: 3}
   facingRight: 1
   shootingRate: 0.25
@@ -229,6 +228,7 @@ MonoBehaviour:
   perso: 
   hp: 120
   isEnemy: 0
+  slider: {fileID: 0}
 --- !u!114 &533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,18 +356,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114780017440980690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62c29a0ce3a5c9248a81276b545fd66c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!111 &8727987709460301050
 Animation:
   m_ObjectHideFlags: 0

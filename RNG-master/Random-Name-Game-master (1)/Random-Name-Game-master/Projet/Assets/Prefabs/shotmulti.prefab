@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 256596554291106103}
   - component: {fileID: 3142862512688836376}
   - component: {fileID: 4696378956465477436}
-  - component: {fileID: 27968271164501637}
   - component: {fileID: 3866645867139986192}
   - component: {fileID: 7992963086950291948}
+  - component: {fileID: 4912683729425768104}
   m_Layer: 0
   m_Name: shotmulti
   m_TagString: Bullet
@@ -131,20 +131,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9348893, y: 0.78}
   m_EdgeRadius: 0
---- !u!114 &27968271164501637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3427974312462643547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb95bd9b1ea883846b1254533523752e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 20, y: 0}
-  direction: {x: 1, y: 0}
 --- !u!114 &3866645867139986192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,3 +242,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4912683729425768104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3427974312462643547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8efe200f9c063c548ad638ed78fba189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

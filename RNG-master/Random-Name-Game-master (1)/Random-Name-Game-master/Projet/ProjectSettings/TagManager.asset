@@ -21,6 +21,7 @@ TagManager:
   - BossCollider
   - Bullet
   - Dialogevent
+  - Slider
   layers:
   - Default
   - TransparentFX

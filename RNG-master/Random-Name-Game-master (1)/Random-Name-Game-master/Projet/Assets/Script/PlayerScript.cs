@@ -7,6 +7,7 @@ using Photon.Pun;
 
 using Photon.Realtime;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace BestMasterYi
 {
@@ -41,15 +42,15 @@ namespace BestMasterYi
             {
                 LocalPlayerInstance = gameObject;
             }
-// #Critical
-// we flag as don't destroy on load so that instance survives level synchronization, thus giving a seamless experience when levels load.
+
             DontDestroyOnLoad(gameObject);
             enabled = photonView.IsMine;
         }
         void Update()
         {            
             if (photonView.IsMine)
-            {                
+            {          
+                
                 if (BDashCD > 0)
                 {
                     BDashCD -= Time.deltaTime;
@@ -86,7 +87,9 @@ namespace BestMasterYi
                     Animé.SetBool("Jumping", false);
                     Animé.SetBool("grounded", true);
                 }
-                transform.GetComponent<Vie>().getBar().GetComponent<HPBAR>().SetSize(transform.GetComponent<Vie>().getx()*transform.GetComponent<Vie>().hp);
+                
+                
+               
             }
         }    
         void shot()
@@ -96,7 +99,7 @@ namespace BestMasterYi
             {
                 // false : le joueur n'est pas un ennemi
                 weapon.Attack(false);
-                Sound.Instance.MakePlayerShotSound();
+                
             }
         }        
         void PlayerMove()

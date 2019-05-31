@@ -40,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 9104188427999715197}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -22.521587, y: 24.308887, z: 2.6875}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -123,7 +123,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 9104188427999715197}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0fadd468de61fbd4e86bf3df04a88fa7, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -215,6 +215,7 @@ MonoBehaviour:
   perso: Demon
   hp: 120
   isEnemy: 0
+  slider: {fileID: 0}
 --- !u!114 &6115650116707032821
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,12 +16,12 @@ namespace BestMasterYi
         public int xMoveDirection;
         public bool facingright;
 
-        private EnnemyShotScript[] weapons;
+        
 
         void Awake()
         {
             // Récupération de l'arme de l'ennemi
-            weapons = GetComponentsInChildren<EnnemyShotScript>();
+            
         }
 
         void Start()

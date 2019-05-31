@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using MyNamespace;
 using Photon.Pun;
 using UnityEngine;
+using UnityEngine.UI;
+using Photon.Realtime;
 
 namespace BestMasterYi
 {
-    public class Vie : MonoBehaviour
+    public class Vie : MonoBehaviourPun
     {
         private float maxHp;
         public string perso;
         public float hp;
         public bool isEnemy = true;
-        private GameObject bar;
-        private double dmgtobar;
+        public GameObject slider;        
         private float x;
         private PlayerScript player;
         private string scene = "MainMenu";
@@ -35,21 +36,24 @@ namespace BestMasterYi
                     hp += PersistantManagerScript.Instance.HeroModif[0];
                     break;
             }
-            
-            
+
+            maxHp = hp;
+            if (transform.gameObject.tag == "player")
+            {
             player = GameObject.FindGameObjectWithTag("player").GetComponent<PlayerScript>();
-        }
-        
-
-        public float getx()
-        {
-            return x;
+            
+            
+                slider = GameObject.FindGameObjectWithTag("Slider");
+            }
         }
 
-        public GameObject getBar()
+        private void Update()
         {
-            return bar;
+            if (transform.gameObject.tag =="player")
+            slider.GetComponent<Slider>().value = hp/maxHp;
         }
+
+       
 
         private void OnTriggerEnter2D(Collider2D other)
         {
@@ -97,7 +101,6 @@ namespace BestMasterYi
                 photonView.RPC("DestroyTarget", RpcTarget.All, null);
             }
 
-//            bar.GetComponent<HPBAR>().SetSize(x * hp);
         }
     
 
@@ -106,14 +109,13 @@ namespace BestMasterYi
         {
             if (transform.gameObject.tag == "player")
             {
-                Sound.Instance.DeathSound();
+                
                 transform.position = new Vector3(-3f, 2f, 1f);
-                hp = maxHp;
-                bar.GetComponent<HPBAR>().SetSize(x*hp);
+                hp = maxHp;                
             }
             else
             {
-                Sound.Instance.MakeCreepDeath();  
+                
                 Destroy(gameObject);
             }
         }

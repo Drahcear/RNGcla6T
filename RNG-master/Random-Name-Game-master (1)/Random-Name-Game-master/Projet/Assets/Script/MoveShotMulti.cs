@@ -7,7 +7,7 @@ namespace BestMasterYi
 
 
 
-    public class MoveScript : MonoBehaviour
+    public class MoveShotMulti : MonoBehaviour
     {
         // 1 - Designer variables
 
@@ -23,7 +23,7 @@ namespace BestMasterYi
         {
             player = GameObject.FindWithTag("player");
             
-            if (player.GetComponent<soloPlayer>().facingRight!=facingright)
+            if (player.GetComponent<PlayerScript>().facingRight!=facingright)
                 FlipPlayer(); 
         }
 
