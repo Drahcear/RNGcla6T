@@ -27,7 +27,7 @@ namespace BestMasterYi
             switch (PersistantManagerScript.Instance.language)
             {
                 case "en":
-                    ValueTxt.text = string.Format("x{0}\nattack: {2}\nHp: {1}", nb, hp, degats);
+                    ValueTxt.text = string.Format("  {3}\n  x{0}\n  attack: {2}\n  Hp: {1}", nb, hp, degats,objet);
                     break;
                 default:
                     ValueTxt.text = string.Format("x{0}\nattaque: {2}\nPv: {1}", nb, hp, degats);

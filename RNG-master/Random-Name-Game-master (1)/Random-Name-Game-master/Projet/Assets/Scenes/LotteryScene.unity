@@ -807,7 +807,12 @@ MonoBehaviour:
   - {fileID: 1881469760}
   - {fileID: 764818633}
   Mcharacter:
-  - Sword
+  - "Pierre d Infinulit\xE9"
+  - "Pierre d Infinulit\xE9"
+  - "Pierre d Infinulit\xE9"
+  - "Pierre d Infinulit\xE9"
+  - "Pierre d Infinulit\xE9"
+  - "Pierre d Infinulit\xE9"
   Rcharacter: []
   Ccharacter: []
   M: 101
