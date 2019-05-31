@@ -775,8 +775,9 @@ MonoBehaviour:
   level: Stage1
   language: fr
   HeroModif: 0300000006000000
-  TankModif: 0000000000000000
-  ChevalierModif: 0000000000000000
+  TankModif: 0800000002000000
+  ChevalierModif: 0600000003000000
+  DemonModif: 0500000002000000
   SelectItem: 
 --- !u!4 &1071254394
 Transform:

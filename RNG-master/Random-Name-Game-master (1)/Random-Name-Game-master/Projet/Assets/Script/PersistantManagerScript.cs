@@ -18,6 +18,7 @@ namespace BestMasterYi
         public List<int> HeroModif;
         public List<int> TankModif;
         public List<int> ChevalierModif;
+        public List<int> DemonModif;
 
         public string SelectItem;
         

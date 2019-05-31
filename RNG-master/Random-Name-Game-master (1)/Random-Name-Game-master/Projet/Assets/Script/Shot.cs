@@ -9,7 +9,7 @@ namespace BestMasterYi
     {
 
         public string perso;
-        public int damage = 1;
+        public int damage;
 
         /// <summary>
         /// Projectile ami ou ennemi ?

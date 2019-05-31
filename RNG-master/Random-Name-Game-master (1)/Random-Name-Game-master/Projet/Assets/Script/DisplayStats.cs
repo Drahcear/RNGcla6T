@@ -33,6 +33,9 @@ namespace BestMasterYi
                 case "Chevalier":
                     modif = PersistantManagerScript.Instance.ChevalierModif;
                     break;
+                case "Demon":
+                    modif = PersistantManagerScript.Instance.DemonModif;
+                    break;
                 default:
                     modif = PersistantManagerScript.Instance.HeroModif;
                     break;

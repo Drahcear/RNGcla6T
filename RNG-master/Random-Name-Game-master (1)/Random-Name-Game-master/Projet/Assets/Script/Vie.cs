@@ -28,6 +28,9 @@ namespace BestMasterYi
                 case "Chevalier":
                     hp += PersistantManagerScript.Instance.ChevalierModif[0];
                     break;
+                case "Demon":
+                    hp += PersistantManagerScript.Instance.DemonModif[0];
+                    break;
                 default:
                     hp += PersistantManagerScript.Instance.HeroModif[0];
                     break;
@@ -83,7 +86,7 @@ namespace BestMasterYi
         {                                    
             if (transform.gameObject.tag == "player" && collider.gameObject.CompareTag("Méchant"))
             {
-                hp -= 1;
+                hp -= 10;
                 player.GetComponent<UnityEngine.Animation>().Play("DmgTaken");
                 StartCoroutine(player.Knockback(0.02f, 150,player.transform.position));
             }

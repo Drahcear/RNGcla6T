@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   perso: 
-  hp: 3
+  hp: 50
   isEnemy: 1
 --- !u!114 &8106328664158850702
 MonoBehaviour:
