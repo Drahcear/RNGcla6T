@@ -22,14 +22,19 @@ public class shot1 : StateMachineBehaviour
     {
         if (timer <= 0)
         {
-            int rand = Random.Range(0, 2);
-            if (rand == 0)
+            int rand = Random.Range(0, 5);
+            if (rand == 0 ||rand ==1)
             {
                 animator.SetTrigger("Shot2");
             }
-            else
+            if (rand ==2 || rand ==3)
             {                                    
-                    animator.SetTrigger("Idle");                
+                animator.SetTrigger("Idle");                
+            }
+
+            if (rand == 4)
+            {
+                animator.SetTrigger("Shot3");
             }
         }
 

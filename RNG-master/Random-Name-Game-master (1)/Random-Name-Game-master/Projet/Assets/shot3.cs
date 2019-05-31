@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using BestMasterYi;
 using UnityEngine;
 
-public class Shot2 : StateMachineBehaviour
+public class shot3 : StateMachineBehaviour
 {
     public float timer;
     public float minTime;
@@ -14,7 +14,7 @@ public class Shot2 : StateMachineBehaviour
     {
         
         timer = Random.Range(minTime, maxTime); 
-        animator.transform.GetComponent<Boss2IA>().Attack2();
+        animator.transform.GetComponent<Boss2IA>().Attack3();
     }
 
 
@@ -22,19 +22,19 @@ public class Shot2 : StateMachineBehaviour
     {
         if (timer <= 0)
         {
-            int rand = Random.Range(0, 5);
-            if (rand == 0 ||rand ==1)
+            int rand = Random.Range(0, 3);
+            if (rand == 0)
             {
                 animator.SetTrigger("Shot1");
             }
-            if (rand ==2 || rand ==3)
+            if (rand ==1)
             {                                    
                 animator.SetTrigger("Idle");                
             }
 
-            if (rand == 4)
+            if (rand == 2)
             {
-                animator.SetTrigger("Shot3");
+                animator.SetTrigger("Shot2");
             }
         }
 

@@ -109,8 +109,6 @@ MonoBehaviour:
   timer: 0
   BDashCD: 0
   BDashRate: 0
-  Equipement: {fileID: 0}
-  Inventory: {fileID: 0}
 --- !u!50 &1729107993
 Rigidbody2D:
   serializedVersion: 4
@@ -145,7 +143,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.035425186, y: 0.09992351}
+  m_Offset: {x: 0.035425186, y: 0.086067736}
   m_SpriteTilingProperty:
     border: {x: 0.34, y: 0.16, z: 0.29, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -156,7 +154,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5752287, y: 1.0001531}
+  m_Size: {x: 0.5752287, y: 0.97244155}
   m_EdgeRadius: 0
 --- !u!95 &1729107998
 Animator:
@@ -192,6 +190,7 @@ MonoBehaviour:
   bar: {fileID: 0}
   isEnemy: 0
   health: 0
+  perso: 
 --- !u!114 &1729107997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,6 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54303c7a7125bc04b8865abefa475377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  perso: 
   hp: 4
   isEnemy: 0
 --- !u!114 &1729107999
