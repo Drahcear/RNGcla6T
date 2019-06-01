@@ -802,17 +802,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Object
   cost: 200
-  L:
-  - {fileID: 1137450084}
-  - {fileID: 1881469760}
-  - {fileID: 764818633}
+  L: []
   Mcharacter:
-  - "Pierre d Infinulit\xE9"
-  - "Pierre d Infinulit\xE9"
-  - "Pierre d Infinulit\xE9"
-  - "Pierre d Infinulit\xE9"
-  - "Pierre d Infinulit\xE9"
-  - "Pierre d Infinulit\xE9"
+  - "Pierres d'Infinulit\xE9"
   Rcharacter: []
   Ccharacter: []
   M: 101

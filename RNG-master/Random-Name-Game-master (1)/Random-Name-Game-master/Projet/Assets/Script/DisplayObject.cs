@@ -10,7 +10,9 @@ namespace BestMasterYi
     {
         public Text ValueTxt;
         public string objet;
-        public int nb = 0;
+        public string FR;
+        public string EN;
+        public int nb;
         public int degats;
         public int hp;
         public GameObject Item;
@@ -27,10 +29,10 @@ namespace BestMasterYi
             switch (PersistantManagerScript.Instance.language)
             {
                 case "en":
-                    ValueTxt.text = string.Format("  {3}\n  x{0}\n  attack: {2}\n  Hp: {1}", nb, hp, degats,objet);
+                    ValueTxt.text = string.Format("  {3}\n  x{0}\n\n\n\n\n\n  attack: {2}\n  Hp: {1}", nb, hp, degats,EN);
                     break;
                 default:
-                    ValueTxt.text = string.Format("x{0}\nattaque: {2}\nPv: {1}", nb, hp, degats);
+                    ValueTxt.text = string.Format("  {3}\n  x{0}\n\n\n\n\n\n  attaque: {2}\n  Pv: {1}", nb, hp, degats,FR);
                     break;
             }
         }

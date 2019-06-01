@@ -18,7 +18,7 @@ namespace BestMasterYi
             if (Scene == "MainMenu")
                 SceneManager.LoadScene(Scene);
             
-            else if (SceneManager.GetActiveScene().name == "CharacterSelect")
+            else if (SceneManager.GetActiveScene().name == "CharacterSelect" && Scene !="DungeonSelect")
             {
                 n = 0;
                 foreach (var c in PersistantManagerScript.Instance.summoned)
@@ -33,7 +33,7 @@ namespace BestMasterYi
                     SceneManager.LoadScene(Scene);
                 }
             }
-            else if (SceneManager.GetActiveScene().name == "DungeonSelect")
+            else if (SceneManager.GetActiveScene().name == "DungeonSelect" && Scene !="MainMenu")
             {
                 SceneManager.LoadScene(3);
                 PersistantManagerScript.Instance.level = Scene;

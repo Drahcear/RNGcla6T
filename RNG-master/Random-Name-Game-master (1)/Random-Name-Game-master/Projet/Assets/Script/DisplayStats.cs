@@ -62,12 +62,15 @@ namespace BestMasterYi
                 {
                     if (item.name == PersistantManagerScript.Instance.SelectItem)
                     {
-                        DisplayObject objet =  item.GetComponent<DisplayObject>();
-                        modif[0] += objet.hp;
-                        modif[1] += objet.degats;
-                        PersistantManagerScript.Instance.artifact.Remove(item.GetComponent<DisplayObject>().objet);
-                        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                    }   
+                        DisplayObject objet = item.GetComponent<DisplayObject>();
+                        if (objet.nb > 0)
+                        {
+                            modif[0] += objet.hp;
+                            modif[1] += objet.degats;
+                            PersistantManagerScript.Instance.artifact.Remove(item.GetComponent<DisplayObject>().objet);
+                            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                        }
+                    }
                 }
                 
             }
