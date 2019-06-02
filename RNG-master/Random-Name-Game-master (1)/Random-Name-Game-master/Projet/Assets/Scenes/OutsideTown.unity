@@ -239,7 +239,7 @@ PrefabInstance:
     - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
@@ -268,21 +268,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
       propertyPath: ENdiaLines.Array.data[0]
-      value: 'Knight : Do you know the news apparently a newbie destroy a hight level
+      value: 'Knight: Do you know the news apparently a newbie destroy a hight level
         demon.'
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: ENdiaLines.Array.data[1]
-      value: 'Shielder : Do you seriously believe in some random rumor. Newbie would
+      value: 'Shielder: Do you seriously believe in some random rumor? Newbie would
         just freak out *laugh*.'
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: ENdiaLines.Array.data[2]
-      value: 'Hero : (Looks like some "experienced knights" think that they are more
+      value: 'Hero: (Looks like some "experienced knights" think that they are more
         skilled than me. I would like to see them in a dungeon).  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[0]
+      value: "Chevalier: Tu as entendu la nouvelle? Une d\xE9butante aurait battu
+        un d\xE9mon de haut niveau."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[1]
+      value: "Protecteur: Tu crois sinc\xE9rement \xE0 ce genre de rumeur? Ta d\xE9butante
+        serait paralys\xE9e par la peur *rire*."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[2]
+      value: "Hero: (On diraitque certain \"chevaliers exp\xE9riment\xE9s\" pensent
+        qu'ils sont meilleurs que moi. J'aimerais les voir dans le donjon)."
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5896998850026566436, guid: 058fe6a4977f1b6408cb29400b29ba24, type: 3}
@@ -349,7 +372,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &374172850
 GameObject:
@@ -476,7 +499,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555484188
 GameObject:
@@ -533,7 +556,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &666852516
 GameObject:
@@ -620,7 +643,7 @@ PrefabInstance:
     - target: {fileID: 4404105288264593849, guid: 85b0d11b760d62548bcd36e75d29ca48,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4404105288264593849, guid: 85b0d11b760d62548bcd36e75d29ca48,
         type: 3}
@@ -654,8 +677,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4404105288264593798, guid: 85b0d11b760d62548bcd36e75d29ca48,
         type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404105288264593798, guid: 85b0d11b760d62548bcd36e75d29ca48,
+        type: 3}
       propertyPath: ENdiaLines.Array.data[0]
       value: <-- City
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404105288264593798, guid: 85b0d11b760d62548bcd36e75d29ca48,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[0]
+      value: <-- Ville
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b0d11b760d62548bcd36e75d29ca48, type: 3}
@@ -752,7 +785,7 @@ RectTransform:
   - {fileID: 1133925712}
   - {fileID: 666852517}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -864,7 +897,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!251 &891161941
 PlatformEffector2D:
@@ -935,7 +968,7 @@ PrefabInstance:
     - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
@@ -952,6 +985,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566439, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e65205cd2d819142864ff5c0de32dec,
+        type: 3}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: ENdiaLines.Array.size
@@ -959,28 +998,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
       propertyPath: ENdiaLines.Array.data[0]
-      value: 'Knight : Do you know the news apparently a newbie destroy a hight level
+      value: 'Knight: Do you know the news apparently a newbie destroy a hight level
         demon.'
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: ENdiaLines.Array.data[1]
-      value: 'Shielder : Do you seriously believe in some random rumor. Newbie would
+      value: 'Shielder: Do you seriously believe in some random rumor? Newbie would
         just freak out *laugh*.'
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: ENdiaLines.Array.data[2]
-      value: 'Hero : (Looks like some "experienced knights" think that they are more
+      value: 'Hero: (Looks like some "experienced knights" think that they are more
         skilled than me. I would like to see them in a dungeon).  '
       objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566439, guid: 058fe6a4977f1b6408cb29400b29ba24,
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1e65205cd2d819142864ff5c0de32dec,
+      propertyPath: FRdiaLines.Array.data[0]
+      value: "Chevalier: Tu as entendu la nouvelle? Une d\xE9butante aurait battu
+        un d\xE9mon de haut niveau."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
+      propertyPath: FRdiaLines.Array.data[1]
+      value: "Protecteur: Tu crois sinc\xE9rement \xE0 ce genre de rumeur? Ta d\xE9butante
+        serait paralys\xE9e par la peur *rire*."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[2]
+      value: "Hero: (On diraitque certain \"chevaliers exp\xE9riment\xE9s\" pensent
+        qu'ils sont meilleurs que moi. J'aimerais les voir dans le donjon)."
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5896998850026566436, guid: 058fe6a4977f1b6408cb29400b29ba24, type: 3}
     - {fileID: 5896998850026566437, guid: 058fe6a4977f1b6408cb29400b29ba24, type: 3}
@@ -1054,79 +1110,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1107983833
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5896998850026566458, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_Name
-      value: Npc (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 27.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5896998850026566436, guid: 058fe6a4977f1b6408cb29400b29ba24, type: 3}
-    - {fileID: 5896998850026566437, guid: 058fe6a4977f1b6408cb29400b29ba24, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 058fe6a4977f1b6408cb29400b29ba24, type: 3}
 --- !u!1 &1112981754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,7 +1216,7 @@ Transform:
   m_LocalScale: {x: 2.748, y: 0.41, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1133925712 stripped
 RectTransform:
@@ -1289,7 +1274,7 @@ PrefabInstance:
     - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566438, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
@@ -1306,6 +1291,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566439, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98be8047993eb634581c9bf53740e9c4,
+        type: 3}
     - target: {fileID: 5896998850026566456, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -1333,8 +1324,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
       propertyPath: ENdiaLines.Array.data[0]
-      value: 'Suspicious man : DO YOU WANT TO PARTY WITH ME ?'
+      value: 'Suspicious man: DO YOU WANT TO PARTY WITH ME?'
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
@@ -1348,12 +1344,17 @@ PrefabInstance:
       value: 'Hero : (Looks like some "experienced knights" think that they are more
         skilled than me. I would like to see them in a dungeon).  '
       objectReference: {fileID: 0}
-    - target: {fileID: 5896998850026566439, guid: 058fe6a4977f1b6408cb29400b29ba24,
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 98be8047993eb634581c9bf53740e9c4,
+      propertyPath: FRdiaLines.Array.data[0]
+      value: 'Homme suspiscieux: TU VEUX FAIRE EQUIPE AVEC MOI?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
+      propertyPath: FRdiaLines.Array.data[1]
+      value: "Hero: Umm...N...Non d\xE9sol\xE9, je suis plus une joueur solo (c'est
+        quoi son probl\xE8me?)"
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5896998850026566436, guid: 058fe6a4977f1b6408cb29400b29ba24, type: 3}
     - {fileID: 5896998850026566437, guid: 058fe6a4977f1b6408cb29400b29ba24, type: 3}
@@ -1410,7 +1411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195482423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.7095976, y: 2.5142632, z: -9}
+  m_LocalPosition: {x: -7.6986628, y: 2.5142632, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1216455729}
@@ -1542,7 +1543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204152453}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.7095976, y: 2.5142632, z: -9}
+  m_LocalPosition: {x: -7.6986628, y: 2.5142632, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1700,7 +1701,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1245579001
 GameObject:
@@ -1806,7 +1807,7 @@ Transform:
   m_LocalScale: {x: 2.748, y: 0.41, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1355413464
 GameObject:
@@ -1872,7 +1873,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1470691823
 GameObject:
@@ -1929,7 +1930,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1488430528
 GameObject:
@@ -2035,7 +2036,7 @@ Transform:
   m_LocalScale: {x: 2.748, y: 0.41, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1591620008
 PrefabInstance:
@@ -2154,16 +2155,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3723747169246375625, guid: ff1d4ee4483470c43bbffe210df99e33,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3723747169706733999, guid: ff1d4ee4483470c43bbffe210df99e33,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 23
-      objectReference: {fileID: 0}
     - target: {fileID: 3723747169246375624, guid: ff1d4ee4483470c43bbffe210df99e33,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2183,6 +2174,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 144.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723747169246375625, guid: ff1d4ee4483470c43bbffe210df99e33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3723747169706733984, guid: ff1d4ee4483470c43bbffe210df99e33,
         type: 3}
@@ -2213,6 +2209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -58.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723747169706733999, guid: ff1d4ee4483470c43bbffe210df99e33,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3723747168599930581, guid: ff1d4ee4483470c43bbffe210df99e33,
         type: 3}
@@ -2295,7 +2296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1603812389
 GameObject:
@@ -2401,7 +2402,7 @@ Transform:
   m_LocalScale: {x: 2.748, y: 0.41, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1927603703
 PrefabInstance:
@@ -2477,14 +2478,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
       propertyPath: ENdiaLines.Array.data[0]
-      value: 'Knight : You new? The dungeon entrance is ahead. Before better hit that
+      value: 'Knight: You new? The dungeon entrance is ahead. Before better hit that
         back button and spend all that cash. Would be bad if you die that young.  '
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: ENdiaLines.Array.data[1]
-      value: 'Hero : Ok thanks for the advice (who do he thinks I am seriously).'
+      value: 'Hero: Ok thanks for the advice (who do he thinks I am seriously).'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[0]
+      value: "Chevalier: Tu es nouvelle? L'entr\xE9e du donjon est par l\xE0. Tu devrais
+        depenser ton argent avant de te lancer. Ce serait dommage de mourrir si jeune."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[1]
+      value: 'Hero: Ok merci pour le conseil (pour qui il me prends)'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5896998850026566436, guid: 058fe6a4977f1b6408cb29400b29ba24, type: 3}
@@ -2540,7 +2557,7 @@ PrefabInstance:
     - target: {fileID: 4404105288264593849, guid: 85b0d11b760d62548bcd36e75d29ca48,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4404105288264593849, guid: 85b0d11b760d62548bcd36e75d29ca48,
         type: 3}
@@ -2556,6 +2573,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404105288264593798, guid: 85b0d11b760d62548bcd36e75d29ca48,
+        type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404105288264593798, guid: 85b0d11b760d62548bcd36e75d29ca48,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[0]
+      value: --> Donjon (Ruine)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404105288264593798, guid: 85b0d11b760d62548bcd36e75d29ca48,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[1]
+      value: ^ Dungeon 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404105288264593798, guid: 85b0d11b760d62548bcd36e75d29ca48,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[2]
+      value: Sois prudente!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b0d11b760d62548bcd36e75d29ca48, type: 3}

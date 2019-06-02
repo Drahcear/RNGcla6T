@@ -690,13 +690,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: 
   ENdiaLines:
-  - 'Hero : You are badly injured, what happened?'
-  - 'Instructor : A demon broke free from the dungeon and is rampaging. I tried to
+  - 'Hero: You are badly injured, what happened?'
+  - 'Instructor: A demon broke free from the dungeon and is rampaging. I tried to
     stop him but he is too strong'
-  - 'Hero : Okay I am on the case.'
-  - 'Instructor : No don''t go you just finish your basic training you will be killed.'
-  - 'Hero : Everything is fine becausde I AM BESTMASTERYI'
-  FRdiaLines: []
+  - 'Hero: Okay I am on the case.'
+  - 'Instructor: No don''t go you just finish your basic training you will be killed.'
+  - 'Hero: Everything is fine becausde I AM BESTMASTERYI!'
+  FRdiaLines:
+  - "Hero: Tes blessures ont l'air s\xE9v\xE8re, qu'est-ce qui s'est pass\xE9?"
+  - "Instructeur: Un d\xE9mon s'est \xE9chapp\xE9 et s'appr\xE8te \xE0 faire un carnage.
+    J'ai essay\xE9 de le stopper mais il est trop fort."
+  - 'Hero: Okay je m''en charge.'
+  - "Instructeur: Arr\xEAte ce genre d'adversaire est largement hors de ta port\xE9e"
+  - Hero tout vas bien parceque JE SUIS BESTMASTERYI!
 --- !u!1 &827566447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,7 +1076,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951897108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.790012, y: 93.553604, z: -9}
+  m_LocalPosition: {x: -47.827206, y: 93.553604, z: -9}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1338,7 +1344,9 @@ MonoBehaviour:
   ENdiaLines:
   - Never let anyone down...
   - IS MY MOTTO
-  FRdiaLines: []
+  FRdiaLines:
+  - Ne jamais abandonner personne
+  - EST MA DEVISE
 --- !u!4 &1086111989
 Transform:
   m_ObjectHideFlags: 0
@@ -1594,17 +1602,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: wshalors
   ENdiaLines:
-  - 'Instructor : Your basic training is finished.'
-  - 'Instructor : There are special move that you only can perform and you have to
+  - 'Instructor: Your basic training is finished.'
+  - 'Instructor: There are special move that you only can perform and you have to
     find them.'
-  - 'Instructor : Be careful in the dungeon or when protecting the city we are really
+  - 'Instructor: Be careful in the dungeon or when protecting the city we are really
     grateful that you guys decided to join the army.'
-  - 'Instructor : You have officialy finished the training congratulation. Go ahead
+  - 'Instructor: You have officialy finished the training congratulation. Go ahead
     and get your licence.'
   FRdiaLines:
-  - je
-  - suis
-  - un lapin
+  - "Instructeur: Ton entrainement est termin\xE9."
+  - "Instructeur: Il y a des techniques secr\xE8tes que tu devras d\xE9couvrir par
+    toi m\xEAme."
+  - "Instructeur: Sois prudente dans le donjons ou m\xEAme en dehors, nous sommes
+    tr\xE9s reconnaissant \xE0 ceux qui rejoignent l'arm\xE9e."
+  - "Instructeur: Tu as officielement termin\xE9 ton entrainement f\xE9licitation.
+    Aller vas chercher ta liscence."
 --- !u!1 &1501979272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,12 +1699,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: lol
   ENdiaLines:
-  - 'Instructor : You can attack ennemies by pressing space. If you charge it enough
+  - 'Instructor: You can attack ennemies by pressing space. If you charge it enough
     time you can perform your secondary attack.'
-  - 'Instructor : Try hitting the target next to me. He will turn red and lose hp
-    if you manage to land an attack correctly.'
-  - 'Instructor : If you have finished continue your way.'
-  FRdiaLines: []
+  - 'Instructor: Try hitting the target next to me. He will turn red and lose hp if
+    you manage to land an attack correctly.'
+  - 'Instructor: If you have finished continue your way.'
+  FRdiaLines:
+  - 'Instructeur: Tu peux attaquer un ennemi avec espace. Si tu charge suffisament
+    longtemps tu peux utiliser ton attaque secondaire.'
+  - "Instructeur: Essaye d'attaquer le mannequin \xE0 cot\xE9 de moi. Si tu l'atteint
+    il deviendra rouge."
+  - 'Instructeur: Entraine toi un peu avant de continuer.'
 --- !u!61 &1501979276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1833,7 +1850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517922500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.790012, y: 93.553604, z: -9}
+  m_LocalPosition: {x: -47.827206, y: 93.553604, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1789382195}
@@ -2323,6 +2340,31 @@ PrefabInstance:
       propertyPath: trigger
       value: 
       objectReference: {fileID: 1086111985}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[0]
+      value: BOOM!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[1]
+      value: "Hero: Quelqun est \xE0 terre."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: ENdiaLines.Array.data[1]
+      value: 'Hero: I see someone up there on the ground'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[2]
+      value: Sauvons le!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6, type: 3}
 --- !u!1001 &3723747169104094951
@@ -2510,6 +2552,119 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[0]
+      value: "Instructeur: H\xE9 petite tu t'appelles Hero c'est \xE7a?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: ENdiaLines.Array.data[0]
+      value: 'Instructor: Hey rookie your name is Hero right?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: ENdiaLines.Array.data[1]
+      value: 'Hero: Yes!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: ENdiaLines.Array.data[2]
+      value: 'Instructor: (What an enthusiastic one) I am here to teach you how to
+        fight. But first I have to warn you: this will be a harsh adventure. With
+        demons that are breaking free from the dungeon the population is in danger
+        that is why we need soldier like you. I heard that they are controlled by
+        a certain Owaligor. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: ENdiaLines.Array.data[3]
+      value: 'Instructor: What is even more scary is that he is at least a hundred
+        times more powerful than our legendary hero: BestEZREALEUW.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: ENdiaLines.Array.data[4]
+      value: Hero :N...No way!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: ENdiaLines.Array.data[5]
+      value: 'Instructor: That is true coming right from the mouth of him. He was
+        defeated in a blink of an eye using only one arm.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: ENdiaLines.Array.data[6]
+      value: 'Hero: What the f...(He is busted lul).'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: ENdiaLines.Array.data[7]
+      value: 'Instructor: I don''t know if we will be able to defeat him. If not you
+        can say goodbye to the resident of the Aeria and even the world.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: ENdiaLines.Array.data[8]
+      value: 'Instructor: Enough talk let''s proceed to your training. Move to the
+        right until you meet another instructor and press L to talk to him. You can
+        move using the arrow keys and space to jump.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[1]
+      value: 'Hero: Oui!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[2]
+      value: "Instructeur: (Quel enthousiasme) Je vais t'apprendre \xE0 te battre.
+        Mais d'abord je dois te pr\xE9venir: cette aventure sera difficile. A cause
+        ces d\xE9mons qui s'\xE9chappent du donjon la population est en danger c'est
+        pourquoi nous avons besoin de soldats comme toi. il para\xEEt qu'ils seraient
+        controll\xE9s par un certain Owaligor."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[3]
+      value: "Instructor: Le plus effrayant est qu'il est au moins cent fois plus
+        puissant que notre h\xE9ros l\xE9gendaire: BestEZREALEUW."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[4]
+      value: 'Hero: Im...Impossible!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[5]
+      value: "Instructeur: Il l'admet lui m\xEAme. Il a \xE9t\xE9 vaincu en un instant
+        avec une seule main."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[6]
+      value: 'Hero: Pu...(Il est nul lul)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[7]
+      value: "Instructeur: Je ne sais pas si nous pourront le vaincre. Sinon tu peux
+        dire adieu aux habitants de l'Aeria et m\xEAme \xE0 ceux du monde entier."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[8]
+      value: "Instructeur: Assez parl\xE9 commen\xE7ons ton entrainement. Vas vers
+        la droite jusqu'au prochain instructeur et appui sur L pour lui parler. Utilise
+        les fl\xE8ches pour te d\xE9placer et sauter."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 058fe6a4977f1b6408cb29400b29ba24, type: 3}

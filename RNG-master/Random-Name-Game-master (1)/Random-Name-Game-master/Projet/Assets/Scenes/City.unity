@@ -379,10 +379,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: 
   ENdiaLines:
-  - 'Villager : Sop moving around or I will punish you.'
-  - 'Child : LET ME GO!'
-  - 'Hero : Better not approach them.'
-  FRdiaLines: []
+  - 'Villager: Stop moving around or I will punish you.'
+  - 'Child: LET ME GO!'
+  - 'Hero: Better not approach them.'
+  FRdiaLines:
+  - "Villagois: Arr\xEAte de bouger ou tu seras punis."
+  - 'Enfant: LACHE MOI!'
+  - 'Hero: Il vaut mieux ne pas s''en meler'
 --- !u!61 &79021023
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -890,16 +893,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3723747169246375625, guid: ff1d4ee4483470c43bbffe210df99e33,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3723747169706733999, guid: ff1d4ee4483470c43bbffe210df99e33,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 26
-      objectReference: {fileID: 0}
     - target: {fileID: 3723747169246375624, guid: ff1d4ee4483470c43bbffe210df99e33,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -919,6 +912,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 113.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723747169246375625, guid: ff1d4ee4483470c43bbffe210df99e33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3723747169706733984, guid: ff1d4ee4483470c43bbffe210df99e33,
         type: 3}
@@ -959,6 +957,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 42.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723747169706733999, guid: ff1d4ee4483470c43bbffe210df99e33,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3723747168599930581, guid: ff1d4ee4483470c43bbffe210df99e33,
         type: 3}
@@ -1975,7 +1978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986744239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.7488804, y: 1.5252318, z: -9}
+  m_LocalPosition: {x: -7.7624927, y: 1.5252318, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2359,7 +2362,11 @@ MonoBehaviour:
   - 'Baby : WAAAAA!'
   - 'Woman : What do I do ?'
   - 'Hero : *laugh*'
-  FRdiaLines: []
+  FRdiaLines:
+  - "Femme: Ne pleure pas b\xE9b\xE9 ne pleure pas."
+  - "B\xE9b\xE9: WAAAAAA!"
+  - 'Femme: Que faire?'
+  - 'Hero: *rire*'
 --- !u!61 &1160242780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2455,7 +2462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239365077}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.7488804, y: 1.5252318, z: -9}
+  m_LocalPosition: {x: -7.7624927, y: 1.5252318, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1867069564}
@@ -2947,9 +2954,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: 
   ENdiaLines:
-  - 'Knight : Nice weather isn''t it ?'
-  - 'ero : Yeah.'
-  FRdiaLines: []
+  - 'Knight: Nice weather isn''t it?'
+  - 'Hero: Yeah.'
+  FRdiaLines:
+  - 'Chevalier: Beau temps n''est-ce pas?'
+  - 'Hero: Ouais.'
 --- !u!61 &1351284116
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3423,6 +3432,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4404105288264593798, guid: 85b0d11b760d62548bcd36e75d29ca48,
         type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404105288264593798, guid: 85b0d11b760d62548bcd36e75d29ca48,
+        type: 3}
       propertyPath: ENdiaLines.Array.data[0]
       value: <-- OutsideTown
       objectReference: {fileID: 0}
@@ -3430,6 +3444,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ENdiaLines.Array.data[1]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404105288264593798, guid: 85b0d11b760d62548bcd36e75d29ca48,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[0]
+      value: <-- Sortie de la ville
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b0d11b760d62548bcd36e75d29ca48, type: 3}

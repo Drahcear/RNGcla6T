@@ -1152,6 +1152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
       propertyPath: ENdiaLines.Array.data[0]
       value: Whaa...
       objectReference: {fileID: 0}
@@ -1174,6 +1179,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue
       value: f
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[0]
+      value: Whaa...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6, type: 3}
@@ -1770,13 +1780,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
       propertyPath: ENdiaLines.Array.data[0]
-      value: 'Hero : It was a tough one.'
+      value: 'Hero: It was a tough one.'
       objectReference: {fileID: 0}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
       propertyPath: ENdiaLines.Array.data[1]
-      value: 'Hero : Well let''s go back and report his death.'
+      value: 'Hero: Well let''s go back and report his death.'
       objectReference: {fileID: 0}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
@@ -1787,6 +1802,16 @@ PrefabInstance:
         type: 3}
       propertyPath: ENdiaLines.Array.data[2]
       value: BOOM
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[0]
+      value: "Hero: Il \xE9tait coriace."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[1]
+      value: 'Hero: Bon allons rapporter sa mort.'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2451222510935230434, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6, type: 3}
@@ -2410,23 +2435,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
+      propertyPath: FRdiaLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
       propertyPath: ENdiaLines.Array.data[0]
-      value: 'Hero : What a nice place. '
+      value: 'Hero: What a nice place. '
       objectReference: {fileID: 0}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
       propertyPath: ENdiaLines.Array.data[1]
-      value: 'Hero : This tombstone... I wonder who was this Ninjox.'
+      value: 'Hero: This tombstone... I wonder who was this Ninjox.'
       objectReference: {fileID: 0}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
       propertyPath: ENdiaLines.Array.data[3]
-      value: 'Hero : I can hear the boss, he must be near better be on guard.'
+      value: 'Hero: I can hear the boss, he must be near better be on guard.'
       objectReference: {fileID: 0}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
       propertyPath: ENdiaLines.Array.data[2]
       value: BOOM
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[0]
+      value: 'Hero: Sympa cet endroit.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[1]
+      value: "Hero: Cette pierre tombale...Je me demande qui \xE9tait ce Ninjox"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[2]
+      value: BOOM
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: FRdiaLines.Array.data[3]
+      value: "Hero: Je peux entendre le boss, il doit \xEAtre tout pr\xEAt je devrais
+        rester sur mes gardes."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6, type: 3}
