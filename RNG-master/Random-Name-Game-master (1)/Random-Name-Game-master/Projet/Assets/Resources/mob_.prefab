@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 1793884038}
   - component: {fileID: 3003224337634470368}
   m_Layer: 0
-  m_Name: Mob_
+  m_Name: mob_
   m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

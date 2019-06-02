@@ -35,5 +35,7 @@ MonoBehaviour:
   - Destroy
   - DestroyTarget
   - Move
+  - AntiTrigger
+  - Trigger
   DisableAutoOpenWizard: 1
   ShowSettings: 0
