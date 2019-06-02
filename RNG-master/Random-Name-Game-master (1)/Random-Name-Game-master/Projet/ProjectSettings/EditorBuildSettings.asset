@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Bossfight.unity
     guid: 9cdfa910dbe31d7498a87563670a68e7
   - enabled: 1
+    path: Assets/Scenes/D2solo.unity
+    guid: e0e614129aefd7b40af5da6b1d64c724
+  - enabled: 1
     path: Assets/Scenes/OutsideTown.unity
     guid: aedb00fcf2656fe46a2b203417ebc3fa
   - enabled: 1

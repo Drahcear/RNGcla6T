@@ -46,7 +46,7 @@ namespace BestMasterYi
                     Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
                     // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
                       PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector3(
-                        -3f, 2f, 1f), Quaternion.identity, 0);                                                            
+                        -3f, 0     , 1f), Quaternion.identity, 0);                                                            
                 }
                 else
                 {

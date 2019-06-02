@@ -9,15 +9,15 @@ namespace BestMasterYi
     public class Boss : MonoBehaviour
     {
         private Animator animé;
-        //public GameObject last;
-        //public GameObject sound;
+        public GameObject last;
+        public GameObject sound;
 
 
 
         private void Start()
         {
             animé = GetComponent<Animator>();
-            //sound.SetActive(true);
+            sound.SetActive(true);
         }
 
         private void Update()
@@ -31,10 +31,10 @@ namespace BestMasterYi
             {
                 animé.SetTrigger("Dead");
                 
-    
+                last.SetActive(true);
                 Destroy(gameObject,1f) ;
                 
-                //last.SetActive(true);
+                
                 
             }
         }
