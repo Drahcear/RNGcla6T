@@ -17,11 +17,18 @@ namespace BestMasterYi
         public bool TriesToConnectToRoom;
         
         private string scene = "Stage1";
+        private string scene2 = "Dungeon2";
 
         public string Scene
         {
             get => scene;
             set => scene = value;
+        }
+
+        public string Scene2
+        {
+            get => scene2;
+            set => scene2 = value; 
         }
         
             

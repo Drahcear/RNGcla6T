@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/OutsideTown.unity
     guid: aedb00fcf2656fe46a2b203417ebc3fa
   - enabled: 1
+    path: Assets/Scenes/Dungeon2.unity
+    guid: f3efe2711be36b14ea08017bb87d2a70
+  - enabled: 1
     path: Assets/Scenes/Equipement.unity
     guid: c6e0c41ab56f0944f9d94d986b3d55b6
   - enabled: 1

@@ -22,13 +22,7 @@ namespace BestMasterYi
             else
             {
                 Animé.SetBool("IsRunning",false);
-            }            
-            if (Input.GetKeyDown(KeyCode.Space))
-                Animé.SetTrigger("IsAttacking");
-            else
-            {
-                Animé.SetBool("IsAttacking",false);
-            }
+            }                        
         }
     }
 }

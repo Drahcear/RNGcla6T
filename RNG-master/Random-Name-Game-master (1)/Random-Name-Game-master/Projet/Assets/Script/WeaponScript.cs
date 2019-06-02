@@ -11,6 +11,7 @@ namespace BestMasterYi
         public Transform shotPrefab2;
         public  bool facingRight = false;
         public float shootingRate = 0.5f;
+        private Animator Animé;
 
 
 
@@ -22,6 +23,7 @@ namespace BestMasterYi
         void Start()
         {
             shootCooldown = 0f;
+            Animé = GetComponent<Animator>();
         }
 
         void Update()
@@ -52,6 +54,7 @@ namespace BestMasterYi
                     var shotTransform = Instantiate(shotPrefab2) as Transform;
                     AttackType(shotTransform);
                     Shot shot = shotTransform.gameObject.GetComponent<Shot>();
+                    Animé.SetTrigger("IsAttacking2");
 
                     if (shot != null)
                     {
@@ -64,6 +67,7 @@ namespace BestMasterYi
                     AttackType(shotTransform1);
                     
                     Shot shot = shotTransform1.gameObject.GetComponent<Shot>();
+                    Animé.SetTrigger("IsAttacking");
 
                     if (shot != null)
                     {

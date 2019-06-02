@@ -46,33 +46,7 @@ namespace BestMasterYi
                     Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
                     // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
                       PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector3(
-                        -3f, 2f, 1f), Quaternion.identity, 0);
-                    if (PhotonNetwork.IsMasterClient)
-                    {
-                        PhotonNetwork.Instantiate(mob.name, new Vector3(
-                            -9.712f, -12.124f, 1f), Quaternion.identity, 0);
-                        PhotonNetwork.Instantiate(mob.name, new Vector3(
-                            -9.13f , -1.68f , 1f), Quaternion.identity, 0);
-                        PhotonNetwork.Instantiate(mob.name, new Vector3(
-                            11.59f, -4.01f,1f), Quaternion.identity, 0);
-                        PhotonNetwork.Instantiate(mob.name, new Vector3(
-                            14.22f, 2.19f,1f), Quaternion.identity, 0);
-                        PhotonNetwork.Instantiate(mob.name, new Vector3(
-                            11.23f, 10.28f,1f), Quaternion.identity, 0);
-                        PhotonNetwork.Instantiate(mob.name, new Vector3(
-                            2.84f, 15.09f,1f), Quaternion.identity, 0);
-                        
-                        PhotonNetwork.Instantiate(mob.name, new Vector3(
-                            14f, 27.4f,1f), Quaternion.identity, 0);    
-                        PhotonNetwork.Instantiate(mob.name, new Vector3(
-                            2.6f, 34.1f,1f), Quaternion.identity, 0);
-                        PhotonNetwork.Instantiate(mob.name, new Vector3(
-                            -13.7f,49.1f,1f), Quaternion.identity, 0);
-                        Debug.Log("true");
-                    }
-                    
-
-                    
+                        -3f, 2f, 1f), Quaternion.identity, 0);                                                            
                 }
                 else
                 {
