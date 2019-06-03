@@ -22,7 +22,7 @@ public class ZeniMoney : MonoBehaviour
     {
         if (other.gameObject.tag == "player")
         {
-            //machinpersistantmanager.money += money;
+            PersistantManagerScript.Instance.money += money;
             Destroy(gameObject);
         }
     }

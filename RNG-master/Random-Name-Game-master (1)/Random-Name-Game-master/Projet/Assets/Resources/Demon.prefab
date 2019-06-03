@@ -112,7 +112,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 4f5b703cfcbc12e4ea9c4f95b6be8c18, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1259ae6c632c8854e88efc71e3f46482, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -183,18 +183,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013607532, y: 0.09830679}
+  m_Offset: {x: 0.013607532, y: 0.063878834}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.83, y: 1.31}
+    oldSize: {x: 0.88, y: 1.46}
     newSize: {x: 0.96, y: 1.05}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.57405585, y: 1.0033865}
+  m_Size: {x: 0.57405585, y: 1.0722424}
   m_EdgeRadius: 0
 --- !u!114 &662261437
 MonoBehaviour:
@@ -304,7 +304,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters: []
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 0
+    Name: IsRunning
+  - Type: 4
+    SynchronizeType: 0
+    Name: grounded
+  - Type: 4
+    SynchronizeType: 0
+    Name: Jumping
+  - Type: 9
+    SynchronizeType: 0
+    Name: Backdash
+  - Type: 9
+    SynchronizeType: 0
+    Name: IsAttacking
+  - Type: 9
+    SynchronizeType: 0
+    Name: IsAttacking2
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0
