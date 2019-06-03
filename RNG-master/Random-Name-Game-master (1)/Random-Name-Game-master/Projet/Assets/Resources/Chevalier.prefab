@@ -48,6 +48,8 @@ GameObject:
   - component: {fileID: 535}
   - component: {fileID: 536}
   - component: {fileID: 534}
+  - component: {fileID: 6395021442325604216}
+  - component: {fileID: 5563151311449113129}
   m_Layer: 0
   m_Name: Chevalier
   m_TagString: player
@@ -107,7 +109,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 1628aee0f9c6c7242b519a54ef3c51dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d4f831bc876856f43ae734d1e88d4a97, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -152,18 +154,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013607532, y: 0.09830679}
+  m_Offset: {x: 0.013607532, y: 0.123800576}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.13, y: 1.11}
+    oldSize: {x: 0.97, y: 1.23}
     newSize: {x: 1.2, y: 1.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.57405585, y: 1.0033865}
+  m_Size: {x: 0.57405585, y: 0.9523989}
   m_EdgeRadius: 0
 --- !u!114 &531
 MonoBehaviour:
@@ -194,8 +196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54303c7a7125bc04b8865abefa475377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  perso: 
-  hp: 5
+  perso: Chevalier
+  hp: 125
   isEnemy: 0
   slider: {fileID: 0}
 --- !u!114 &533
@@ -272,3 +274,34 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 1
+--- !u!95 &6395021442325604216
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 88d5259b01ea6924887d544e2da805e0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5563151311449113129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 345261713337e2b44a87edc24e52f287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 31ebea54177e8dc41bdc2c7bb8a0c532
+guid: 971c5a036a8ea2841a02933662d15d66
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Demon_run_0
-    21300002: Demon_run_1
-    21300004: Demon_run_2
-    21300006: Demon_run_3
+    21300000: Demon_run 1_0
+    21300002: Demon_run 1_1
+    21300004: Demon_run 1_2
+    21300006: Demon_run 1_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -67,7 +67,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -78,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -88,13 +88,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Demon_run_0
+      name: Demon_run 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 136
-        height: 140
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -102,19 +102,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 113a803485d2a8345a27704c07f94f5b
+      spriteID: 1b9df23d7d22d254890c07310711a418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Demon_run_1
+      name: Demon_run 1_1
       rect:
         serializedVersion: 2
-        x: 137
+        x: 136
         y: 0
         width: 136
-        height: 140
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,19 +122,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33abdde0350e01e47b3066c92391e1de
+      spriteID: a58846f9f4c36e64e86fcb05e19f29c4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Demon_run_2
+      name: Demon_run 1_2
       rect:
         serializedVersion: 2
         x: 272
         y: 0
         width: 136
-        height: 140
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,19 +142,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a51c87f7c94732342aa8b76a5e2af743
+      spriteID: 16c71de11b0dae74d80191b9971c9784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Demon_run_3
+      name: Demon_run 1_3
       rect:
         serializedVersion: 2
         x: 408
         y: 0
         width: 136
-        height: 140
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,7 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 957582ee189b5e94cbc23dbe3d716012
+      spriteID: 85730a0094fde7a4ebefe2d6755d63b7
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 29760a82572c29a42b8c4a3bfb641cad
+    spriteID: 5562e0ad0af714b4db8097589c592722
     vertices: []
     indices: 
     edges: []
