@@ -31,7 +31,7 @@ namespace BestMasterYi
         {
             if ((other.gameObject.tag == "player" || other.gameObject.tag == "Melee" ||
                  other.gameObject.tag == "Bullet") &&
-                other.gameObject.tag != "Méchantshot" && transform.gameObject.tag!="Méchant")
+                other.gameObject.tag != "Méchantshot" && transform.gameObject.tag!="Shotpenetration")
             {
                 Destroy(gameObject);
             }

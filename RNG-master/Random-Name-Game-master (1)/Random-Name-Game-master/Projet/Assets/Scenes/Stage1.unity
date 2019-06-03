@@ -987,7 +987,7 @@ GameObject:
   - component: {fileID: 89050729}
   m_Layer: 0
   m_Name: MObMulti (6)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2378,7 +2378,7 @@ GameObject:
   - component: {fileID: 305012316}
   m_Layer: 0
   m_Name: MObMulti (1)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2985,7 +2985,7 @@ GameObject:
   - component: {fileID: 379081085}
   m_Layer: 0
   m_Name: MObMulti (2)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3310,7 +3310,7 @@ GameObject:
   - component: {fileID: 410770603}
   m_Layer: 0
   m_Name: MObMulti (12)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4459,7 +4459,7 @@ GameObject:
   - component: {fileID: 483673386}
   m_Layer: 0
   m_Name: MObMulti (4)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6838,7 +6838,7 @@ GameObject:
   - component: {fileID: 909789921}
   m_Layer: 0
   m_Name: MObMulti (5)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7881,7 +7881,7 @@ GameObject:
   - component: {fileID: 1013880634}
   m_Layer: 0
   m_Name: MObMulti (10)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8548,7 +8548,7 @@ GameObject:
   - component: {fileID: 1150944896}
   m_Layer: 0
   m_Name: MObMulti (3)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8816,7 +8816,7 @@ GameObject:
   - component: {fileID: 1171038623}
   m_Layer: 0
   m_Name: MObMulti (8)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9312,7 +9312,7 @@ GameObject:
   - component: {fileID: 1263496165}
   m_Layer: 0
   m_Name: MObMulti (7)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10609,7 +10609,7 @@ GameObject:
   - component: {fileID: 1534248084}
   m_Layer: 0
   m_Name: MObMulti (9)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13117,7 +13117,7 @@ GameObject:
   - component: {fileID: 1990096450}
   m_Layer: 0
   m_Name: MObMulti (11)
-  m_TagString: Untagged
+  m_TagString: "M\xE9chant"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14202,6 +14202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MObMulti
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+        type: 3}
+      propertyPath: m_TagString
+      value: "M\xE9chant"
       objectReference: {fileID: 0}
     - target: {fileID: 1212995404744760947, guid: 803d637ace7335c4a8b672c7ec37af9f,
         type: 3}

@@ -804,6 +804,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MObMulti (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+        type: 3}
+      propertyPath: m_TagString
+      value: "M\xE9chant"
+      objectReference: {fileID: 0}
     - target: {fileID: 1212995404744760947, guid: 803d637ace7335c4a8b672c7ec37af9f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1718,6 +1723,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MObMulti
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+        type: 3}
+      propertyPath: m_TagString
+      value: "M\xE9chant"
       objectReference: {fileID: 0}
     - target: {fileID: 1212995404744760947, guid: 803d637ace7335c4a8b672c7ec37af9f,
         type: 3}
@@ -2790,6 +2800,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MObMulti (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+        type: 3}
+      propertyPath: m_TagString
+      value: "M\xE9chant"
+      objectReference: {fileID: 0}
     - target: {fileID: 1212995404744760947, guid: 803d637ace7335c4a8b672c7ec37af9f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2992,6 +3007,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MObMulti (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+        type: 3}
+      propertyPath: m_TagString
+      value: "M\xE9chant"
       objectReference: {fileID: 0}
     - target: {fileID: 1212995404744760947, guid: 803d637ace7335c4a8b672c7ec37af9f,
         type: 3}
@@ -3768,6 +3788,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MObMulti (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+        type: 3}
+      propertyPath: m_TagString
+      value: "M\xE9chant"
+      objectReference: {fileID: 0}
     - target: {fileID: 1212995404744760947, guid: 803d637ace7335c4a8b672c7ec37af9f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4540,6 +4565,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MObMulti (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+        type: 3}
+      propertyPath: m_TagString
+      value: "M\xE9chant"
       objectReference: {fileID: 0}
     - target: {fileID: 1212995404744760947, guid: 803d637ace7335c4a8b672c7ec37af9f,
         type: 3}
@@ -6281,6 +6311,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MObMulti (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+        type: 3}
+      propertyPath: m_TagString
+      value: "M\xE9chant"
+      objectReference: {fileID: 0}
     - target: {fileID: 1212995404744760947, guid: 803d637ace7335c4a8b672c7ec37af9f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7159,6 +7194,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MObMulti (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+        type: 3}
+      propertyPath: m_TagString
+      value: "M\xE9chant"
+      objectReference: {fileID: 0}
     - target: {fileID: 1212995404744760947, guid: 803d637ace7335c4a8b672c7ec37af9f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7347,6 +7387,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MObMulti (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+        type: 3}
+      propertyPath: m_TagString
+      value: "M\xE9chant"
       objectReference: {fileID: 0}
     - target: {fileID: 1212995404744760947, guid: 803d637ace7335c4a8b672c7ec37af9f,
         type: 3}

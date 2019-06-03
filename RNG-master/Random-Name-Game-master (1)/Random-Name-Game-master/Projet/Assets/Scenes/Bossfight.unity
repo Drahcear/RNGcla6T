@@ -129,7 +129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &92051230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -612,21 +612,6 @@ PrefabInstance:
       propertyPath: playerSpeed
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
-        type: 3}
-      propertyPath: bar
-      value: 
-      objectReference: {fileID: 1942492785}
-    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
-        type: 3}
-      propertyPath: health
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
-        type: 3}
-      propertyPath: perso
-      value: Hero
-      objectReference: {fileID: 0}
     - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
       propertyPath: m_SortingOrder
       value: 99
@@ -643,25 +628,20 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5892805867280148685, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
+    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
         type: 3}
-      propertyPath: m_Animations.Array.size
-      value: 1
+      propertyPath: bar
+      value: 
+      objectReference: {fileID: 1942492785}
+    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
+        type: 3}
+      propertyPath: health
+      value: 120
       objectReference: {fileID: 0}
-    - target: {fileID: 5892805867280148685, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
+    - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
         type: 3}
-      propertyPath: m_Animations.Array.data[0]
-      value: 
-      objectReference: {fileID: 7400000, guid: 4202fb5c99c386841ab2f30e25eb97d6, type: 2}
-    - target: {fileID: 5892805867280148685, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
-        type: 3}
-      propertyPath: m_Animation
-      value: 
-      objectReference: {fileID: 7400000, guid: 4202fb5c99c386841ab2f30e25eb97d6, type: 2}
-    - target: {fileID: 5892805867280148685, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
-        type: 3}
-      propertyPath: m_PlayAutomatically
-      value: 0
+      propertyPath: perso
+      value: Hero
       objectReference: {fileID: 0}
     - target: {fileID: 1729107997, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
       propertyPath: hp
@@ -693,6 +673,26 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 0fadd468de61fbd4e86bf3df04a88fa7, type: 2}
+    - target: {fileID: 5892805867280148685, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
+        type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892805867280148685, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: 4202fb5c99c386841ab2f30e25eb97d6, type: 2}
+    - target: {fileID: 5892805867280148685, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 4202fb5c99c386841ab2f30e25eb97d6, type: 2}
+    - target: {fileID: 5892805867280148685, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
+        type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1729107997, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}

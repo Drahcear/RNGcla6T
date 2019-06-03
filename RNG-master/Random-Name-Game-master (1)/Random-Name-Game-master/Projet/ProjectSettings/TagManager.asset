@@ -22,6 +22,7 @@ TagManager:
   - Bullet
   - Dialogevent
   - Slider
+  - Shotpenetration
   layers:
   - Default
   - TransparentFX
