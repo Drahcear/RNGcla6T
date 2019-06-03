@@ -627,6 +627,22 @@ PrefabInstance:
       propertyPath: perso
       value: Hero
       objectReference: {fileID: 0}
+    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5892805867280148685, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
         type: 3}
       propertyPath: m_Animations.Array.size
@@ -650,22 +666,6 @@ PrefabInstance:
     - target: {fileID: 1729107997, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
       propertyPath: hp
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
-      propertyPath: m_SortingOrder
-      value: 99
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
-      propertyPath: m_Color.b
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1729107993, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
       propertyPath: m_Constraints
@@ -1130,11 +1130,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2451222510935230434, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
-        type: 3}
-      propertyPath: trigger
-      value: 
-      objectReference: {fileID: 1262112571}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
       propertyPath: ENdiaLines.Array.size
@@ -1185,6 +1180,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 4.3450403
       objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230434, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: trigger
+      value: 
+      objectReference: {fileID: 1262112571}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6, type: 3}
 --- !u!1 &918150594 stripped
@@ -1687,7 +1687,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348369445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.56, y: -0.057769734, z: 0.90893984}
+  m_LocalPosition: {x: 20.4, y: -0.057769734, z: 0.90893984}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1765,11 +1765,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2451222510935230434, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
-        type: 3}
-      propertyPath: trigger
-      value: 
-      objectReference: {fileID: 918150594}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
       propertyPath: ENdiaLines.Array.size
@@ -1815,6 +1810,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230434, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: trigger
+      value: 
+      objectReference: {fileID: 918150594}
     m_RemovedComponents:
     - {fileID: 2451222510935230434, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6, type: 3}
     - {fileID: 2451222510935230436, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6, type: 3}
@@ -2067,7 +2067,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507657724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.42196983, y: -0.057769734, z: 0.90893984}
+  m_LocalPosition: {x: 2.53, y: -0.057769734, z: 0.90893984}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2425,11 +2425,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2451222510935230434, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
-        type: 3}
-      propertyPath: trigger
-      value: 
-      objectReference: {fileID: 918150594}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
       propertyPath: ENdiaLines.Array.size
@@ -2481,6 +2476,11 @@ PrefabInstance:
       value: "Hero: Je peux entendre le boss, il doit \xEAtre tout pr\xEAt je devrais
         rester sur mes gardes."
       objectReference: {fileID: 0}
+    - target: {fileID: 2451222510935230434, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
+        type: 3}
+      propertyPath: trigger
+      value: 
+      objectReference: {fileID: 918150594}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6, type: 3}
 --- !u!1 &1816038829

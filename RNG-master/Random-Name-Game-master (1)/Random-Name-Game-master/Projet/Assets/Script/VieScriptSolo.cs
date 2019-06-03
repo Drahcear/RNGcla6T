@@ -27,7 +27,8 @@ namespace BestMasterYi
         {
             if (hp <= 0)
             {
-                Destroy(transform.gameObject);
+                transform.GetComponent<Loot>().Lootboxinterditenbelgique();
+                Destroy(transform.parent.gameObject);
             }
         }
 
@@ -41,8 +42,7 @@ namespace BestMasterYi
                 {
                     hp -= shot.damage;
 
-                    StartCoroutine(transform.gameObject.GetComponent<EnemyScript>()
-                        .Knockback(0.05f, 150, transform.position));
+                   
                 }
             }
         }

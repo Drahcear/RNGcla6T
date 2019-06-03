@@ -69,19 +69,24 @@ namespace BestMasterYi
                         player.GetComponent<UnityEngine.Animation>().Play("Dmgtaken");
                         StartCoroutine(player.Knockback(0.02f, 150,player.transform.position));
                     }
-                    if (transform.gameObject.tag == "Méchant")
-                    {
-                        //transform.GetComponent<UnityEngine.Animation>().Play("Dmgtaken");
-                        StartCoroutine(transform.gameObject.GetComponent<EnemyScript>().Knockback(0.05f, 150,transform.position));
-                    }
+                   
+
                     if (other.gameObject.tag == "Bullet")
 
                         Destroy(shot.gameObject);
                 }
                 if (hp <= 0)
                 {
-                    PhotonView photonView = PhotonView.Get(this);
-                    photonView.RPC("DestroyTarget", RpcTarget.All, null);
+                    if (transform.parent.gameObject.tag == "Méchant")
+                    {
+                        PhotonView photonView = PhotonView.Get(this);
+                        photonView.RPC("DestroyTarget", RpcTarget.All, null);
+                    }
+                    else
+                    {
+                        PhotonView photonView = PhotonView.Get(this);
+                        photonView.RPC("DestroyTarget", RpcTarget.All, null);
+                    }
                 }
             }
         }
@@ -115,8 +120,8 @@ namespace BestMasterYi
             }
             else
             {
-                
-                Destroy(gameObject);
+                transform.GetComponent<Loot>().Lootboxinterditenbelgique();
+                Destroy(transform.parent.gameObject);
             }
         }
     }

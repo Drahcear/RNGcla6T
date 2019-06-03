@@ -33,9 +33,9 @@ TagManager:
   - 
   - Player
   - Boss
-  - 
-  - 
-  - 
+  - UI2
+  - BG
+  - FG
   - 
   - 
   - 
@@ -58,4 +58,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 2972848193
+    locked: 0
+  - name: FG
+    uniqueID: 4219130777
     locked: 0
