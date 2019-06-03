@@ -396,7 +396,7 @@ PrefabInstance:
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: FRdiaLines.Array.data[2]
-      value: "Hero: (On diraitque certain \"chevaliers exp\xE9riment\xE9s\" pensent
+      value: "Hero: (On dirait que certain \"chevaliers exp\xE9riment\xE9s\" pensent
         qu'ils sont meilleurs que moi. J'aimerais les voir dans le donjon)."
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566456, guid: 058fe6a4977f1b6408cb29400b29ba24,
@@ -1382,12 +1382,12 @@ PrefabInstance:
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: FRdiaLines.Array.data[0]
-      value: 'Homme suspiscieux: TU VEUX FAIRE EQUIPE AVEC MOI?'
+      value: 'Homme suspicieux: TU VEUX FAIRE EQUIPE AVEC MOI?'
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: FRdiaLines.Array.data[1]
-      value: "Hero: Umm...N...Non d\xE9sol\xE9, je suis plus une joueur solo (c'est
+      value: "Hero: Umm...N...Non d\xE9sol\xE9, je suis plus une joueuse solo (c'est
         quoi son probl\xE8me?)"
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566439, guid: 058fe6a4977f1b6408cb29400b29ba24,
@@ -2242,6 +2242,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3723747169706733999, guid: ff1d4ee4483470c43bbffe210df99e33,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 3723747169706733984, guid: ff1d4ee4483470c43bbffe210df99e33,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2271,11 +2276,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -58.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3723747169706733999, guid: ff1d4ee4483470c43bbffe210df99e33,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3723747168599930581, guid: ff1d4ee4483470c43bbffe210df99e33,
         type: 3}
@@ -2558,12 +2558,13 @@ PrefabInstance:
         type: 3}
       propertyPath: FRdiaLines.Array.data[0]
       value: "Chevalier: Tu es nouvelle? L'entr\xE9e du donjon est par l\xE0. Tu devrais
-        depenser ton argent avant de te lancer. Ce serait dommage de mourrir si jeune."
+        d\xE9penser ton argent avant de te lancer. Ce serait dommage de mourir si
+        jeune."
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: FRdiaLines.Array.data[1]
-      value: 'Hero: Ok merci pour le conseil (pour qui il me prends)'
+      value: 'Hero: Ok merci pour le conseil (pour qui il me prend)'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5896998850026566436, guid: 058fe6a4977f1b6408cb29400b29ba24, type: 3}

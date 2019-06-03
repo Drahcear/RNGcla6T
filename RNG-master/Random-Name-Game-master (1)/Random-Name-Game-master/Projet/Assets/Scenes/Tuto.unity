@@ -702,7 +702,7 @@ MonoBehaviour:
     J'ai essay\xE9 de le stopper mais il est trop fort."
   - 'Hero: Okay je m''en charge.'
   - "Instructeur: Arr\xEAte ce genre d'adversaire est largement hors de ta port\xE9e"
-  - Hero tout vas bien parceque JE SUIS BESTMASTERYI!
+  - Hero tout vas bien parce que JE SUIS BESTMASTERYI!
 --- !u!1 &827566447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,7 +1076,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951897108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.827206, y: 93.553604, z: -9}
+  m_LocalPosition: {x: -47.826958, y: 93.553604, z: -9}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1610,13 +1610,13 @@ MonoBehaviour:
   - 'Instructor: You have officialy finished the training congratulation. Go ahead
     and get your licence.'
   FRdiaLines:
-  - "Instructeur: Ton entrainement est termin\xE9."
+  - "Instructeur: Ton entra\xEEnement est termin\xE9."
   - "Instructeur: Il y a des techniques secr\xE8tes que tu devras d\xE9couvrir par
     toi m\xEAme."
   - "Instructeur: Sois prudente dans le donjons ou m\xEAme en dehors, nous sommes
     tr\xE9s reconnaissant \xE0 ceux qui rejoignent l'arm\xE9e."
   - "Instructeur: Tu as officielement termin\xE9 ton entrainement f\xE9licitation.
-    Aller vas chercher ta liscence."
+    Aller vas chercher ta licence."
 --- !u!1 &1501979272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,11 +1705,11 @@ MonoBehaviour:
     you manage to land an attack correctly.'
   - 'Instructor: If you have finished continue your way.'
   FRdiaLines:
-  - 'Instructeur: Tu peux attaquer un ennemi avec espace. Si tu charge suffisament
+  - 'Instructeur: Tu peux attaquer un ennemi avec espace. Si tu charges suffisament
     longtemps tu peux utiliser ton attaque secondaire.'
-  - "Instructeur: Essaye d'attaquer le mannequin \xE0 cot\xE9 de moi. Si tu l'atteint
+  - "Instructeur: Essaye d'attaquer le mannequin \xE0 cot\xE9 de moi. Si tu l'atteins
     il deviendra rouge."
-  - 'Instructeur: Entraine toi un peu avant de continuer.'
+  - "Instructeur: Entra\xEEne toi un peu avant de continuer."
 --- !u!61 &1501979276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1850,7 +1850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517922500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.827206, y: 93.553604, z: -9}
+  m_LocalPosition: {x: -47.826958, y: 93.553604, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1789382195}
@@ -2353,7 +2353,7 @@ PrefabInstance:
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
       propertyPath: FRdiaLines.Array.data[1]
-      value: "Hero: Quelqun est \xE0 terre."
+      value: "Hero: Quelqu'un est \xE0 terre."
       objectReference: {fileID: 0}
     - target: {fileID: 2451222510935230437, guid: 8ec06f73fe27cdd4f9c01c99fe602fa6,
         type: 3}
@@ -2656,13 +2656,13 @@ PrefabInstance:
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: FRdiaLines.Array.data[7]
-      value: "Instructeur: Je ne sais pas si nous pourront le vaincre. Sinon tu peux
+      value: "Instructeur: Je ne sais pas si nous pourrons le vaincre. Sinon tu peux
         dire adieu aux habitants de l'Aeria et m\xEAme \xE0 ceux du monde entier."
       objectReference: {fileID: 0}
     - target: {fileID: 5896998850026566457, guid: 058fe6a4977f1b6408cb29400b29ba24,
         type: 3}
       propertyPath: FRdiaLines.Array.data[8]
-      value: "Instructeur: Assez parl\xE9 commen\xE7ons ton entrainement. Vas vers
+      value: "Instructeur: Assez parl\xE9 commen\xE7ons ton entrainement. Va vers
         la droite jusqu'au prochain instructeur et appui sur L pour lui parler. Utilise
         les fl\xE8ches pour te d\xE9placer et sauter."
       objectReference: {fileID: 0}

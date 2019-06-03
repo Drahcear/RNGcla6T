@@ -23,6 +23,7 @@ TagManager:
   - Dialogevent
   - Slider
   - Shotpenetration
+  - Particle
   layers:
   - Default
   - TransparentFX

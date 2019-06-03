@@ -11,6 +11,7 @@ namespace BestMasterYi
         private Animator animé;
         public GameObject last;
         public GameObject sound;
+        public GameObject Particle;
 
 
 
@@ -25,6 +26,7 @@ namespace BestMasterYi
             if (GetComponent<viesolo>().health <= 250)
             {
                 animé.SetTrigger("Stage2");
+                Particle.SetActive(true);
             }
 
             if (GetComponent<viesolo>().health <= 0)
