@@ -34,7 +34,7 @@ namespace BestMasterYi
             
         void Start()
         {
-            DontDestroyOnLoad(gameObject);
+            
             TriesToConnectToMaster = false;
             TriesToConnectToRoom = false;
             scene = PersistantManagerScript.Instance.level;

@@ -24,4 +24,10 @@ public class DC : MonoBehaviour
         PhotonNetwork.Disconnect();
         SceneManager.LoadScene("MainMenu");
     }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+            {
+                if (other.gameObject.tag == "player")
+                    disco();
+            }
 }
