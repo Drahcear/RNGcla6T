@@ -68,7 +68,6 @@ namespace BestMasterYi
                     recovery = 1.5f;
                     player.GetComponent<UnityEngine.Animation>().Play("Dmgtaken");
                     StartCoroutine(player.Knockback(0.02f, 150,player.transform.position));
-                    
                 }                                
             }
             
