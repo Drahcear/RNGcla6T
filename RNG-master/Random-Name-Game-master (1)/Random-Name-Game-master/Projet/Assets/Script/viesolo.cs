@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace BestMasterYi
@@ -56,6 +57,15 @@ namespace BestMasterYi
 
                 }
             }
+            if (health <= 0)
+            {
+                if (transform.gameObject.tag == "player")
+                {
+                    
+                    Destroy(gameObject);
+                    SceneManager.LoadScene("GameOver");
+                }
+            }
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -84,7 +94,17 @@ namespace BestMasterYi
 
                     Destroy(shot.gameObject);
                 }
-            }                                
+            }
+
+            if (health <= 0)
+            {
+                if (transform.gameObject.tag == "player")
+                {
+                    
+                    Destroy(gameObject);
+                    SceneManager.LoadScene("GameOver");
+                }
+            }
         }                        
     }
 }
