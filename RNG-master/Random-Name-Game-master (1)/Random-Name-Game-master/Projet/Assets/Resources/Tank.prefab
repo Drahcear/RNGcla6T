@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 534}
   - component: {fileID: 841775169488177186}
   - component: {fileID: 5235772456493280799}
+  - component: {fileID: 1116160540410958595}
   m_Layer: 0
   m_Name: Tank
   m_TagString: player
@@ -241,6 +242,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 536}
   - {fileID: 534}
+  - {fileID: 1116160540410958595}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -306,3 +308,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1116160540410958595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 3
+    SynchronizeType: 2
+    Name: speed
+  - Type: 4
+    SynchronizeType: 2
+    Name: IsRunning
+  - Type: 4
+    SynchronizeType: 2
+    Name: Jumping
+  - Type: 4
+    SynchronizeType: 2
+    Name: grounded
+  - Type: 9
+    SynchronizeType: 2
+    Name: IsAttacking
+  m_SynchronizeLayers:
+  - SynchronizeType: 2
+    LayerIndex: 0

@@ -306,22 +306,22 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters:
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: IsRunning
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: grounded
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: Jumping
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: Backdash
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: IsAttacking
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: IsAttacking2
   m_SynchronizeLayers:
   - SynchronizeType: 2

@@ -1381,7 +1381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPrefab: {fileID: 103, guid: 08e2b201550376e44bf7a0d4ffb6cb93, type: 3}
-  mob: {fileID: 1793884031, guid: 3fe3718463769b645ab98bb1a876fd0f, type: 3}
+  mob: {fileID: 1479928622}
+  scene: Stage1
   Prefabs:
   - {fileID: 103, guid: 08e2b201550376e44bf7a0d4ffb6cb93, type: 3}
   - {fileID: 103, guid: 55c264be3f4cb1d47ae60d7390b9330a, type: 3}
@@ -10162,6 +10163,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1239357, y: 26.2346}
   m_EdgeRadius: 0
+--- !u!1 &1479928622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1212995405389307644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1491629373
 GameObject:
   m_ObjectHideFlags: 0
@@ -14207,6 +14214,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: "M\xE9chant"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212995404744760948, guid: 803d637ace7335c4a8b672c7ec37af9f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212995404744760947, guid: 803d637ace7335c4a8b672c7ec37af9f,
         type: 3}
