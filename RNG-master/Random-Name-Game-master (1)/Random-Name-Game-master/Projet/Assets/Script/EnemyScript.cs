@@ -26,7 +26,7 @@ namespace BestMasterYi
 
         void Start()
         {
-            DontDestroyOnLoad(transform.gameObject);
+            
         }
 
         void Flip()

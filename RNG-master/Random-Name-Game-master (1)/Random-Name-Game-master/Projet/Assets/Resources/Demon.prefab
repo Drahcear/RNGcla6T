@@ -210,8 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 9186766541095511580, guid: 757dfcbb75cd2fa4f855a8fca8e4ebc4,
     type: 3}
-  shotPrefab2: {fileID: 9186766541095511580, guid: 757dfcbb75cd2fa4f855a8fca8e4ebc4,
-    type: 3}
+  shotPrefab2: {fileID: 387, guid: 5d47d724c56b2494798db1ef5766a14c, type: 3}
   facingRight: 1
   shootingRate: 0.25
 --- !u!114 &662261436
