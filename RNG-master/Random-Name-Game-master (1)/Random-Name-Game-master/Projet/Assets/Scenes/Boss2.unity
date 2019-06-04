@@ -1439,21 +1439,9 @@ PrefabInstance:
       propertyPath: playerSpeed
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
-      propertyPath: m_SortingOrder
-      value: 99
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
-      propertyPath: m_Color.b
-      value: 1
+    - target: {fileID: 1729107994, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: BDashRate
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4471703588011637425, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
         type: 3}
@@ -1470,9 +1458,29 @@ PrefabInstance:
       propertyPath: perso
       value: Hero
       objectReference: {fileID: 0}
+    - target: {fileID: 1729108000, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: facingRight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1729107997, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
       propertyPath: hp
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729107995, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1729107993, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
       propertyPath: m_Constraints
@@ -1485,10 +1493,6 @@ PrefabInstance:
     - target: {fileID: 1729107992, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
       propertyPath: m_UsedByEffector
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729108000, guid: 9dd8a2a7d4145134598ba22ff3a6da67, type: 3}
-      propertyPath: facingRight
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4953198327514792580, guid: 9dd8a2a7d4145134598ba22ff3a6da67,
         type: 3}
@@ -2077,11 +2081,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3723747169706733999, guid: ff1d4ee4483470c43bbffe210df99e33,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 26
-      objectReference: {fileID: 0}
     - target: {fileID: 3723747169706733984, guid: ff1d4ee4483470c43bbffe210df99e33,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2111,6 +2110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -55.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723747169706733999, guid: ff1d4ee4483470c43bbffe210df99e33,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3723747168599930581, guid: ff1d4ee4483470c43bbffe210df99e33,
         type: 3}
