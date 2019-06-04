@@ -849,7 +849,7 @@ MonoBehaviour:
   artifact: []
   summoned:
   - Hero
-  money: 16000
+  money: 1600
   perso: Hero
   level: Stage1
   language: fr
